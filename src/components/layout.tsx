@@ -1,11 +1,15 @@
-import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import * as React from 'react'
 
 import Header from './header'
 import './layout.css'
 
-const Layout = ({ children }) => (
+interface LayoutProps {
+  children: JSX.Element[]
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
