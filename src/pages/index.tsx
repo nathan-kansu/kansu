@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import { H2 } from '../components/heading'
 import Image from '../components/image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -7,7 +8,7 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hello world</h1>
+    <H2>Hello world</H2>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
