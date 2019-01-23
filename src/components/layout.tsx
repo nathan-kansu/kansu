@@ -18,17 +18,21 @@ const StyledLayout = styled.div`
 `
 
 const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:900');
+
     html {
         box-sizing: border-box;
     }
 
     body {
         background-color: ${props => props.theme.colors.black};
-        color: ${props => props.theme.colors.white};
+        color: ${props => props.theme.colors.grey};
+        font-family: ${props => props.theme.fonts.body};
+        font-size: 1rem;
     }
 
     *, *:before, *:after {
-    box-sizing: inherit;
+        box-sizing: inherit;
     }
 `
 

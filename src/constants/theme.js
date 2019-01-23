@@ -5,7 +5,7 @@ export default {
     white: '#ffffff',
   },
   fonts: {
-    body: '"Roboto", sans-serif',
-    heading: '"Montserrat", sans-serif',
+    body: '"Montserrat", sans-serif',
+    heading: '"Roboto", sans-serif',
   },
 }
