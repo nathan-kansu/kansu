@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import Footer from './footer'
 import Header from './header'
+import Main from './main'
+
 import './layout.css'
 
 interface LayoutProps {
@@ -27,11 +29,11 @@ const Layout = ({ children }: LayoutProps) => (
       }
     `}
     render={data => (
-      <>
+      <StyledLayout>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <StyledLayout>{children}</StyledLayout>
+        <Main>{children}</Main>
         <Footer />
-      </>
+      </StyledLayout>
     )}
   />
 )
