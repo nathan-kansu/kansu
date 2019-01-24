@@ -13,8 +13,11 @@ interface LayoutProps {
 }
 
 const StyledLayout = styled.div`
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template: 65px auto 65px / 960px;
+  justify-content: center;
   margin: 0 auto;
-  max-width: 960px;
 `
 
 const GlobalStyle = createGlobalStyle`
