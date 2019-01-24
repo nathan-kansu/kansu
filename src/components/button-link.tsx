@@ -15,6 +15,11 @@ const StyledButton = styled.a`
   padding: ${modularScale(0)};
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background: ${props => props.theme.colors.white};
+    color: ${props => props.theme.colors.darkBlue};
+  }
 `
 
 const ButtonLink = ({ href, title }: ButtonLinkProps) => (
