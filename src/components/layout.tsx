@@ -25,13 +25,20 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         box-sizing: border-box;
+        height: 100%;
     }
 
     body {
-        background-color: ${props => props.theme.colors.black};
+        background: linear-gradient(
+            ${props => props.theme.colors.darkBlue},
+            ${props => props.theme.colors.black}
+        );
+        background-repeat: no-repeat;
         color: ${props => props.theme.colors.grey};
         font-family: ${props => props.theme.fonts.body};
         font-size: 1rem;
+        height: 100%;
+        margin: 0;
     }
 
     *, *:before, *:after {
