@@ -1,6 +1,6 @@
 export default {
   colors: {
-    black: '#14212c',
+    black: '#000000',
     grey: '#49555e',
     white: '#ffffff',
   },

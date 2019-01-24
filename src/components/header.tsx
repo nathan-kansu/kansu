@@ -1,18 +1,28 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
+import Logo from './logo'
 
 interface Header {
   siteTitle: string
 }
 
-const StyledHeader = styled.div``
+const StyledHeader = styled.header`
+  align-items: center;
+  display: flex;
+`
+
+const H1 = styled.h1`
+  margin: 0;
+`
 
 const Header = ({ siteTitle }: Header) => (
   <StyledHeader>
-    <h1 style={{ margin: 0 }}>
-      <Link to="/">{siteTitle}</Link>
-    </h1>
+    <H1>
+      <Link to="/">
+        <Logo />
+      </Link>
+    </H1>
   </StyledHeader>
 )
 
