@@ -14,7 +14,7 @@ interface LayoutProps {
 
 const StyledLayout = styled.div`
   display: grid;
-  grid-row-gap: ${modularScale(1)};
+  grid-row-gap: ${modularScale(3)};
   grid-template: 65px auto 65px / 960px;
   justify-content: center;
   margin: 0 auto;
@@ -22,6 +22,10 @@ const StyledLayout = styled.div`
 
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:900');
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
 
     html {
         box-sizing: border-box;
@@ -41,9 +45,17 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    *, *:before, *:after {
-        box-sizing: inherit;
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
+
+    a {
+        text-decoration: none;
+    }
+
+
 `
 
 const Layout = ({ children }: LayoutProps) => (

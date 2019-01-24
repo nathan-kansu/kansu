@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
 import Logo from './logo'
+import Nav from './nav'
 
 interface Header {
   siteTitle: string
@@ -10,6 +11,7 @@ interface Header {
 const StyledHeader = styled.header`
   align-items: center;
   display: flex;
+  justify-content: space-between;
 `
 
 const H1 = styled.h1`
@@ -23,6 +25,7 @@ const Header = ({ siteTitle }: Header) => (
         <Logo />
       </Link>
     </H1>
+    <Nav />
   </StyledHeader>
 )
 
