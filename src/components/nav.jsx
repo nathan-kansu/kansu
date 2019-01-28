@@ -1,4 +1,4 @@
-import { modularScale } from 'polished'
+import { rem } from 'polished'
 import * as React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
@@ -11,7 +11,7 @@ const StyledUl = styled.ul`
 `
 
 const StyledLi = styled.ul`
-  margin-right: ${modularScale(1)};
+  margin-right: ${rem(24)};
 
   &:last-child {
     margin-right: 0;
@@ -22,6 +22,7 @@ const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
   font-weight: bold;
+  font-size: 1rem;
   letter-spacing: 2.3px;
   text-transform: uppercase;
 `

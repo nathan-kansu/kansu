@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Section>
-      <H2>About &#9632;</H2>
+      <H2>About</H2>
       <Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         fugiat unde architecto incidunt rerum temporibus magni odio nam, modi
@@ -20,11 +20,11 @@ const IndexPage = () => (
       </Text>
     </Section>
     <Section>
-      <H2>Clients &#9632;</H2>
+      <H2>Clients</H2>
       <Clients />
     </Section>
     <Section>
-      <H2>Contact &#9632;</H2>
+      <H2>Contact</H2>
       <Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         fugiat unde architecto incidunt rerum temporibus magni odio nam, modi

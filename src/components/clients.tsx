@@ -1,6 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-import { modularScale } from 'polished'
+import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 
@@ -11,8 +11,8 @@ import ZoneLogo from '../images/zone.svg'
 const StyledOl = styled.ol`
   align-items: center;
   display: grid;
-  grid-column-gap: ${modularScale(3)};
-  grid-row-gap: ${modularScale(3)};
+  grid-column-gap: ${rem(48)};
+  grid-row-gap: ${rem(48)};
   grid-template-columns: repeat(3, 1fr);
 `
 

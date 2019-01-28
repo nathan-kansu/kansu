@@ -1,12 +1,12 @@
 import { graphql, StaticQuery } from 'gatsby'
-import { modularScale } from 'polished'
+import { rem } from 'polished'
 import * as React from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import Footer from './footer'
 import Header from './header'
 import Main from './main'
 
-import theme from '../constants/theme'
+import theme from '../styles/theme'
 
 interface LayoutProps {
   children: JSX.Element[]
@@ -14,10 +14,10 @@ interface LayoutProps {
 
 const StyledLayout = styled.div`
   display: grid;
-  grid-row-gap: ${modularScale(3)};
-  grid-template: 65px auto 65px / 960px;
+  grid-row-gap: ${rem(48)};
+  grid-template: ${rem(48)} auto ${rem(24)} / 960px;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto 0;
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         box-sizing: border-box;
+        font-size: 100%;
         min-height: 100%;
     }
 
@@ -40,7 +41,6 @@ const GlobalStyle = createGlobalStyle`
         background-repeat: no-repeat;
         color: ${props => props.theme.colors.grey};
         font-family: ${props => props.theme.fonts.body};
-        font-size: 1rem;
         min-height: 100%;
         margin: 0;
     }

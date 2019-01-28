@@ -1,4 +1,4 @@
-import { modularScale } from 'polished'
+import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 
@@ -8,11 +8,11 @@ interface ButtonLinkProps {
 }
 
 const StyledButton = styled.a`
-  border: solid 3px ${props => props.theme.colors.white};
+  border: solid ${rem(3)} ${props => props.theme.colors.white};
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${modularScale(1)};
-  padding: ${modularScale(0)};
+  font-size: ${rem(24)};
+  padding: ${rem(21)};
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
