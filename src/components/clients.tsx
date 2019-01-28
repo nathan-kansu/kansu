@@ -74,7 +74,7 @@ const Clients = () => (
         </StyledLi>
         <StyledLi>
           <Img
-            imgStyle={{ 'object-fit': 'contain' }}
+            imgStyle={{ objectFit: 'contain' }}
             title="Genomics England"
             alt=""
             sizes={data.genomicsEnglandLogo.childImageSharp.fluid}
@@ -82,7 +82,7 @@ const Clients = () => (
         </StyledLi>
         <StyledLi>
           <Img
-            imgStyle={{ 'object-fit': 'contain' }}
+            imgStyle={{ objectFit: 'contain' }}
             title="RHE Global"
             alt=""
             sizes={data.rheLogo.childImageSharp.fluid}

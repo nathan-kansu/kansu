@@ -11,8 +11,11 @@ const StyledText = styled.div`
 
 interface TextProps {
   children: string | JSX.Element
+  className?: string
 }
 
-const Text = ({ children }: TextProps) => <StyledText>{children}</StyledText>
+const Text = ({ className, children }: TextProps) => (
+  <StyledText className={className}>{children}</StyledText>
+)
 
 export default Text

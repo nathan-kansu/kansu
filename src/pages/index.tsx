@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonLink from '../components/button-link'
 import Clients from '../components/clients'
+import Contact from '../components/contact'
 import { H2 } from '../components/heading'
 import Layout from '../components/layout'
 import Section from '../components/section'
@@ -23,16 +23,7 @@ const IndexPage = () => (
       <H2>Clients</H2>
       <Clients />
     </Section>
-    <Section>
-      <H2>Contact</H2>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        fugiat unde architecto incidunt rerum temporibus magni odio nam, modi
-        harum magnam voluptatum quo! Voluptatibus tenetur soluta numquam.
-        Officia, incidunt velit!
-      </Text>
-      <ButtonLink href="mailto:hello@kansu.co" title="Contact" />
-    </Section>
+    <Contact />
   </Layout>
 )
 

@@ -3,6 +3,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 interface ButtonLinkProps {
+  className?: string
   href: string
   title: string
 }
@@ -11,7 +12,9 @@ const StyledButton = styled.a`
   border: solid ${rem(3)} ${props => props.theme.colors.white};
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${rem(24)};
+  font-size: ${rem(18)};
+  letter-spacing: 2.3px;
+  line-height: 1.3333333333;
   padding: ${rem(21)};
   position: relative;
   text-decoration: none;
@@ -19,19 +22,19 @@ const StyledButton = styled.a`
   transition: all 0.25s ease-in-out;
 
   &:before {
-    border: solid 20px ${props => props.theme.colors.black};
+    border: solid ${rem(24)} ${props => props.theme.colors.black};
     content: '';
     position: absolute;
-    left: -20px;
-    top: -20px;
+    left: -${rem(24)};
+    top: -${rem(24)};
   }
 
   &:after {
-    border: solid 20px ${props => props.theme.colors.black};
-    bottom: -20px;
+    border: solid ${rem(24)} ${props => props.theme.colors.black};
+    bottom: -${rem(24)};
     content: '';
     position: absolute;
-    right: -20px;
+    right: -${rem(24)};
   }
 
   &:hover {
@@ -48,8 +51,10 @@ const StyledButton = styled.a`
   }
 `
 
-const ButtonLink = ({ href, title }: ButtonLinkProps) => (
-  <StyledButton href={href}>{title}</StyledButton>
+const ButtonLink = ({ className, href, title }: ButtonLinkProps) => (
+  <StyledButton className={className} href={href}>
+    {title}
+  </StyledButton>
 )
 
 export default ButtonLink
