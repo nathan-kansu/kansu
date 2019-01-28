@@ -10,7 +10,6 @@ import ZoneLogo from '../images/zone.svg'
 
 const StyledOl = styled.ol`
   align-items: center;
-
   display: grid;
   grid-column-gap: ${rem(48)};
   grid-row-gap: ${rem(48)};

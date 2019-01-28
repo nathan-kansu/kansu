@@ -15,7 +15,7 @@ interface LayoutProps {
 const StyledLayout = styled.div`
   display: grid;
   grid-row-gap: ${rem(48)};
-  grid-template: ${rem(72)} auto ${rem(24)} / 960px;
+  grid-template: ${rem(72)} auto ${rem(48)} / 960px;
   justify-content: center;
   margin: auto 0;
 `
