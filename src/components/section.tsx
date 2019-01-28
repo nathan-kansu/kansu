@@ -6,7 +6,7 @@ const StyledSection = styled.section`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding-bottom: ${rem(48)};
+  padding-bottom: ${rem(72)};
   position: relative;
   margin-bottom: ${rem(72)};
 

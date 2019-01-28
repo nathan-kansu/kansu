@@ -11,7 +11,7 @@ const BaseHeader = styled.span`
   font-family: ${props => props.theme.fonts.heading};
   line-height: calc(48 / 36);
   letter-spacing: 2.3px;
-  margin: 0 0 ${rem(24)};
+  margin: 0 0 ${rem(48)};
   position: relative;
   text-transform: uppercase;
 
