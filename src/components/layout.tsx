@@ -45,9 +45,10 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    ul, li {
+    ul, ol, li {
         list-style-type: none;
         padding: 0;
+        padding-inline-start: 0;
         margin: 0;
     }
 
