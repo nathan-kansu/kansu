@@ -10,16 +10,19 @@ import ZoneLogo from '../images/zone.svg'
 
 const StyledOl = styled.ol`
   align-items: center;
+
   display: grid;
   grid-column-gap: ${rem(48)};
   grid-row-gap: ${rem(48)};
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: ${rem(96)} ${rem(96)};
 `
 
 const StyledLi = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 `
 
 const Clients = () => (
@@ -28,7 +31,7 @@ const Clients = () => (
       query {
         fresh8Logo: file(relativePath: { eq: "fresh-8.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 240) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -37,14 +40,14 @@ const Clients = () => (
           relativePath: { eq: "genomics-england.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 240) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         rheLogo: file(relativePath: { eq: "rhe.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 240) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -65,21 +68,23 @@ const Clients = () => (
         <StyledLi>
           <Img
             title="Fresh 8 Gaming"
-            alt="Fresh 8 Gaming logo"
+            alt=""
             sizes={data.fresh8Logo.childImageSharp.fluid}
           />
         </StyledLi>
         <StyledLi>
           <Img
+            imgStyle={{ 'object-fit': 'contain' }}
             title="Genomics England"
-            alt="Genomics England logo"
+            alt=""
             sizes={data.genomicsEnglandLogo.childImageSharp.fluid}
           />
         </StyledLi>
         <StyledLi>
           <Img
+            imgStyle={{ 'object-fit': 'contain' }}
             title="RHE Global"
-            alt="RHE Global logo"
+            alt=""
             sizes={data.rheLogo.childImageSharp.fluid}
           />
         </StyledLi>
