@@ -1,6 +1,6 @@
+import { Link } from 'gatsby'
 import { rem } from 'polished'
 import * as React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const StyledNav = styled.nav`
