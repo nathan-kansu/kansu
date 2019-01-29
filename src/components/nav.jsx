@@ -31,13 +31,16 @@ const Nav = () => (
   <StyledNav>
     <StyledUl>
       <StyledLi>
-        <StyledLink to="#about">About</StyledLink>
+        <StyledLink to="/">Home</StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="#client">Clients</StyledLink>
+        <StyledLink to="/about">About</StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="#contact">Contact</StyledLink>
+        <StyledLink to="/clients">Clients</StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink to="/contact">Contact</StyledLink>
       </StyledLi>
     </StyledUl>
   </StyledNav>
