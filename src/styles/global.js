@@ -10,6 +10,7 @@ export default createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: 100%;
+        line-height: 1.5;
     }
 
     body {

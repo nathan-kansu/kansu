@@ -12,7 +12,7 @@ const StyledSection = styled.section`
   margin-bottom: ${rem(72)};
 
   &:after {
-    border-bottom: solid 5px ${props => props.theme.colors.white};
+    border-bottom: solid ${rem(6)} ${props => props.theme.colors.white};
     bottom: 0;
     content: '';
     position: absolute;
