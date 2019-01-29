@@ -19,10 +19,10 @@ const StyledLink = styled.a``
 const Footer = () => (
   <StyledFooter>
     <StyledLink href="https://foo.com">
-      <GithubLogo />
+      <img src={GithubLogo} alt="" />
     </StyledLink>
     <StyledLink href="https://bar.com">
-      <InstagramLogo />
+      <img src={InstagramLogo} alt="" />
     </StyledLink>
   </StyledFooter>
 )

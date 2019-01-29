@@ -9,7 +9,6 @@ const StyledSection = styled.section`
   height: 100%;
   padding-bottom: ${rem(72)};
   position: relative;
-  margin-bottom: ${rem(72)};
 
   &:after {
     border-bottom: solid ${rem(6)} ${props => props.theme.colors.white};

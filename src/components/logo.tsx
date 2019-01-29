@@ -1,7 +1,7 @@
 import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
-import Icon from '../images/kansu-logo.svg'
+import KansuLogo from '../images/kansu-logo.svg'
 
 const Logo = styled.div`
   height: ${rem(54)};
@@ -9,7 +9,7 @@ const Logo = styled.div`
 
 const Footer = () => (
   <Logo>
-    <Icon className="icon" />
+    <img src={KansuLogo} alt="Kansu logo" />
   </Logo>
 )
 

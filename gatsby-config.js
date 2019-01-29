@@ -30,14 +30,6 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: `${__dirname}/src/images`,
-        },
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

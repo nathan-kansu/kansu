@@ -34,4 +34,9 @@ export default createGlobalStyle`
     a {
         text-decoration: none;
     }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 `

@@ -1,5 +1,5 @@
 import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import GatsbyImg from 'gatsby-image'
 import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
@@ -56,23 +56,23 @@ const Clients = () => (
     render={data => (
       <StyledOl>
         <StyledLi>
-          <AmazonLogo />
+          <img src={AmazonLogo} alt="Amazon logo" />
         </StyledLi>
         <StyledLi>
-          <ZoneLogo />
+          <img src={ZoneLogo} alt="Zone Digital logo" />
         </StyledLi>
         <StyledLi>
-          <MubalooLogo />
+          <img src={MubalooLogo} alt="Mubaloo logo" />
         </StyledLi>
         <StyledLi>
-          <Img
+          <GatsbyImg
             title="Fresh 8 Gaming"
             alt=""
             sizes={data.fresh8Logo.childImageSharp.fluid}
           />
         </StyledLi>
         <StyledLi>
-          <Img
+          <GatsbyImg
             imgStyle={{ objectFit: 'contain' }}
             title="Genomics England"
             alt=""
@@ -80,7 +80,7 @@ const Clients = () => (
           />
         </StyledLi>
         <StyledLi>
-          <Img
+          <GatsbyImg
             imgStyle={{ objectFit: 'contain' }}
             title="RHE Global"
             alt=""
