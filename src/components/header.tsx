@@ -14,17 +14,21 @@ const StyledHeader = styled.header`
   justify-content: space-between;
 `
 
-const H1 = styled.h1`
+const StyledH1 = styled.h1`
   margin: 0;
+`
+
+const StyledLink = styled(Link)`
+  display: block;
 `
 
 const Header = ({ siteTitle }: Header) => (
   <StyledHeader>
-    <H1>
-      <Link to="/">
+    <StyledH1>
+      <StyledLink to="/">
         <Logo />
-      </Link>
-    </H1>
+      </StyledLink>
+    </StyledH1>
     <Nav />
   </StyledHeader>
 )
