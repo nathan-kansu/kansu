@@ -14,8 +14,9 @@ interface LayoutProps {
 
 const StyledLayout = styled.div`
   display: grid;
+  height: 100vh;
   grid-row-gap: ${rem(48)};
-  grid-template: ${rem(72)} auto ${rem(48)} / 960px;
+  grid-template: ${rem(72)} 1fr ${rem(72)} / 960px;
   justify-content: center;
   margin: auto 0;
 `
@@ -30,7 +31,6 @@ const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: 100%;
-        min-height: 100%;
     }
 
     body {
@@ -41,7 +41,6 @@ const GlobalStyle = createGlobalStyle`
         background-repeat: no-repeat;
         color: ${props => props.theme.colors.grey};
         font-family: ${props => props.theme.fonts.body};
-        min-height: 100%;
         margin: 0;
     }
 
