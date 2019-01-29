@@ -1,11 +1,13 @@
 import { graphql, StaticQuery } from 'gatsby'
 import { rem } from 'polished'
 import * as React from 'react'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
+
 import Footer from './footer'
 import Header from './header'
 import Main from './main'
 
+import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 
 interface LayoutProps {
@@ -19,41 +21,6 @@ const StyledLayout = styled.div`
   grid-template: ${rem(72)} 1fr ${rem(72)} / 960px;
   justify-content: center;
   margin: auto 0;
-`
-
-const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:900');
-
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
-
-    html {
-        box-sizing: border-box;
-        font-size: 100%;
-    }
-
-    body {
-        background: linear-gradient(
-            ${props => props.theme.colors.darkBlue},
-            ${props => props.theme.colors.black}
-        );
-        background-repeat: no-repeat;
-        color: ${props => props.theme.colors.grey};
-        font-family: ${props => props.theme.fonts.body};
-        margin: 0;
-    }
-
-    ul, ol, li {
-        list-style-type: none;
-        padding: 0;
-        padding-inline-start: 0;
-        margin: 0;
-    }
-
-    a {
-        text-decoration: none;
-    }
 `
 
 const Layout = ({ children }: LayoutProps) => (
