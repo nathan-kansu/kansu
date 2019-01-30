@@ -18,9 +18,14 @@ const StyledLayout = styled.div`
   display: grid;
   height: 100vh;
   grid-row-gap: ${rem(24)};
-  grid-template: ${rem(72)} 1fr ${rem(72)} / 960px;
+  grid-template-rows: ${rem(72)} 1fr ${rem(72)};
+  grid-template-columns: 90%;
   justify-content: center;
   margin: auto 0;
+
+  @media only screen and (min-width: 1090px) {
+    grid-template-columns: ${props => props.theme.breakpoints.l};
+  }
 `
 
 const Layout = ({ children }: LayoutProps) => (
