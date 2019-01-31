@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/react": "^16.7.22",
+    "@types/react-dom": "^16.0.11",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.6",
     "babel-plugin-styled-components": "^1.10.0",
