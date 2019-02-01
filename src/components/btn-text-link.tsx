@@ -2,7 +2,7 @@ import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 
-interface ButtonLinkProps {
+interface ButtonTextLinkProps {
   className?: string
   href: string
   title: string
@@ -51,10 +51,10 @@ const StyledButton = styled.a`
   }
 `
 
-const ButtonLink = ({ className, href, title }: ButtonLinkProps) => (
+const ButtonTextLink = ({ className, href, title }: ButtonTextLinkProps) => (
   <StyledButton className={className} href={href}>
     {title}
   </StyledButton>
 )
 
-export default ButtonLink
+export default ButtonTextLink
