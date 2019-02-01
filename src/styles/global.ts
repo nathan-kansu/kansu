@@ -32,7 +32,19 @@ export default createGlobalStyle`
     }
 
     a {
+        cursor: pointer;
         text-decoration: none;
+    }
+
+    button {
+        background: none;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+
+        &:focus {
+            outline: 0;
+        }
     }
 
     img {
