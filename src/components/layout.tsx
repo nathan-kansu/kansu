@@ -14,6 +14,10 @@ interface LayoutProps {
   children: JSX.Element[]
 }
 
+interface LayoutState {
+  isMobileNavActive: boolean
+}
+
 const StyledLayout = styled.div`
   display: grid;
   height: 100vh;
@@ -28,28 +32,52 @@ const StyledLayout = styled.div`
   }
 `
 
-const Layout = ({ children }: LayoutProps) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+class Layout extends React.Component<LayoutProps, LayoutState> {
+  constructor(props: LayoutProps) {
+    super(props)
+
+    this.state = {
+      isMobileNavActive: false,
+    }
+  }
+
+  public render() {
+    const { children } = this.props
+    const { isMobileNavActive } = this.state
+
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
           }
-        }
-      }
-    `}
-    render={data => (
-      <ThemeProvider theme={theme}>
-        <StyledLayout>
-          <GlobalStyle />
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <Main>{children}</Main>
-          <Footer />
-        </StyledLayout>
-      </ThemeProvider>
-    )}
-  />
-)
+        `}
+        render={data => (
+          <ThemeProvider theme={theme}>
+            <StyledLayout>
+              <GlobalStyle />
+              <Header
+                handleMobileNavToggle={this.handleMobileNavToggle}
+                isMobileNavActive={isMobileNavActive}
+              />
+              <Main isMobileNavActive={isMobileNavActive}>{children}</Main>
+              <Footer />
+            </StyledLayout>
+          </ThemeProvider>
+        )}
+      />
+    )
+  }
+
+  private handleMobileNavToggle = () => {
+    this.setState(prevState => ({
+      isMobileNavActive: !prevState.isMobileNavActive,
+    }))
+  }
+}
 
 export default Layout

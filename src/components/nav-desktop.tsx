@@ -3,14 +3,19 @@ import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 
-const StyledNav = styled.nav`
-  font-family: ${props => props.theme.fonts.heading};
+const StyledNavDesktop = styled.nav`
+  display: none;
+
+  @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
+    display: block;
+    font-family: ${props => props.theme.fonts.heading};
+  }
 `
 const StyledUl = styled.ul`
   display: flex;
 `
 
-const StyledLi = styled.ul`
+const StyledLi = styled.li`
   margin-right: ${rem(24)};
 
   &:last-child {
@@ -43,7 +48,7 @@ const StyledLink = styled(Link)`
 `
 
 const Nav = () => (
-  <StyledNav>
+  <StyledNavDesktop>
     <StyledUl>
       <StyledLi>
         <StyledLink to="/" activeClassName="active">
@@ -66,7 +71,7 @@ const Nav = () => (
         </StyledLink>
       </StyledLi>
     </StyledUl>
-  </StyledNav>
+  </StyledNavDesktop>
 )
 
 export default Nav

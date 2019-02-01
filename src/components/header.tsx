@@ -1,11 +1,15 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
-import Logo from './logo'
-import Nav from './nav'
+import ButtonBurger from './btn-burger-menu'
 
-interface Header {
-  siteTitle: string
+import Logo from './logo'
+import NavDesktop from './nav-desktop'
+import NavMobile from './nav-mobile'
+
+interface HeaderProps {
+  handleMobileNavToggle: () => void
+  isMobileNavActive: boolean
 }
 
 const StyledHeader = styled.header`
@@ -22,15 +26,21 @@ const StyledLink = styled(Link)`
   display: block;
 `
 
-const Header = ({ siteTitle }: Header) => (
-  <StyledHeader>
-    <StyledH1>
-      <StyledLink to="/">
-        <Logo />
-      </StyledLink>
-    </StyledH1>
-    <Nav />
-  </StyledHeader>
-)
-
+const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
+  return (
+    <StyledHeader>
+      <StyledH1>
+        <StyledLink to="/">
+          <Logo />
+        </StyledLink>
+      </StyledH1>
+      <ButtonBurger
+        handleClick={handleMobileNavToggle}
+        isActive={isMobileNavActive}
+      />
+      {isMobileNavActive && <NavMobile />}
+      <NavDesktop />
+    </StyledHeader>
+  )
+}
 export default Header
