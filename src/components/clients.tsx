@@ -10,11 +10,17 @@ import ZoneLogo from '../images/zone.svg'
 
 const StyledOl = styled.ol`
   align-items: center;
-  display: grid;
+  display: none;
   grid-column-gap: ${rem(48)};
   grid-row-gap: ${rem(48)};
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: ${rem(96)} ${rem(96)};
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: ${rem(96)};
+
+  @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
+    display: none;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: ${rem(96)} ${rem(96)}; */
+  }
 `
 
 const StyledLi = styled.li`

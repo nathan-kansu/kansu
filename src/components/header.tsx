@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 import ButtonBurger from './btn-burger-menu'
@@ -24,6 +25,7 @@ const StyledH1 = styled.h1`
 
 const StyledLink = styled(Link)`
   display: block;
+  margin-right: ${rem(24)};
 `
 
 const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
