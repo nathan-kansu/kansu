@@ -21,10 +21,11 @@ const StyledSection = styled.section`
 
 interface SectionProps {
   children: JSX.Element[]
+  className?: string
 }
 
-const Section = ({ children }: SectionProps) => (
-  <StyledSection>{children}</StyledSection>
+const Section = ({ children, className }: SectionProps) => (
+  <StyledSection className={className}>{children}</StyledSection>
 )
 
 export default Section
