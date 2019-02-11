@@ -1,6 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby'
 import { rem } from 'polished'
-import * as React from 'react'
+import React, { useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Footer from './footer'
@@ -12,10 +12,6 @@ import theme from '../styles/theme'
 
 interface LayoutProps {
   children: JSX.Element[]
-}
-
-interface LayoutState {
-  isMobileNavActive: boolean
 }
 
 const StyledLayout = styled.div`
@@ -32,52 +28,38 @@ const StyledLayout = styled.div`
   }
 `
 
-class Layout extends React.Component<LayoutProps, LayoutState> {
-  constructor(props: LayoutProps) {
-    super(props)
+const Layout = (props: LayoutProps) => {
+  const { children } = props
+  const [isMobileNavActive, handleMobileNavToggle] = useState(false)
 
-    this.state = {
-      isMobileNavActive: false,
-    }
-  }
-
-  public render() {
-    const { children } = this.props
-    const { isMobileNavActive } = this.state
-
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
             }
           }
-        `}
-        render={data => (
-          <ThemeProvider theme={theme}>
-            <StyledLayout>
-              <GlobalStyle />
-              <Header
-                handleMobileNavToggle={this.handleMobileNavToggle}
-                isMobileNavActive={isMobileNavActive}
-              />
-              <Main isMobileNavActive={isMobileNavActive}>{children}</Main>
-              <Footer />
-            </StyledLayout>
-          </ThemeProvider>
-        )}
-      />
-    )
-  }
-
-  private handleMobileNavToggle = () => {
-    this.setState(prevState => ({
-      isMobileNavActive: !prevState.isMobileNavActive,
-    }))
-  }
+        }
+      `}
+      render={() => (
+        <ThemeProvider theme={theme}>
+          <StyledLayout>
+            <GlobalStyle />
+            <Header
+              handleMobileNavToggle={() =>
+                handleMobileNavToggle(prevState => !prevState)
+              }
+              isMobileNavActive={isMobileNavActive}
+            />
+            <Main isMobileNavActive={isMobileNavActive}>{children}</Main>
+            <Footer />
+          </StyledLayout>
+        </ThemeProvider>
+      )}
+    />
+  )
 }
 
 export default Layout
