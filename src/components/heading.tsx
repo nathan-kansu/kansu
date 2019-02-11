@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 interface HeadingProps {
   children: string
+  className?: string
 }
 
 const BaseHeader = styled.span`
@@ -29,6 +30,8 @@ const StyledH2 = styled(BaseHeader)`
   font-size: ${rem(36)};
 `
 
-export const H2 = ({ children }: HeadingProps) => (
-  <StyledH2 as="h2">{children}</StyledH2>
+export const H2 = ({ className, children }: HeadingProps) => (
+  <StyledH2 as="h2" className={className}>
+    {children}
+  </StyledH2>
 )
