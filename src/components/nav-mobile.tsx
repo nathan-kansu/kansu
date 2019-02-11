@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const StyledNavMobile = styled.nav`
@@ -53,35 +53,31 @@ const StyledLink = styled(Link)`
   }
 `
 
-class NavMobile extends React.Component<{}, {}> {
-  public render() {
-    return (
-      <StyledNavMobile>
-        <StyledUl>
-          <StyledLi>
-            <StyledLink to="/" activeClassName="active">
-              Home
-            </StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink to="/about" activeClassName="active">
-              About
-            </StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink to="/clients" activeClassName="active">
-              Clients
-            </StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink to="/contact" activeClassName="active">
-              Contact
-            </StyledLink>
-          </StyledLi>
-        </StyledUl>
-      </StyledNavMobile>
-    )
-  }
-}
+const NavMobile = () => (
+  <StyledNavMobile>
+    <StyledUl>
+      <StyledLi>
+        <StyledLink to="/" activeClassName="active">
+          Home
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink to="/about" activeClassName="active">
+          About
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink to="/clients" activeClassName="active">
+          Clients
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink to="/contact" activeClassName="active">
+          Contact
+        </StyledLink>
+      </StyledLi>
+    </StyledUl>
+  </StyledNavMobile>
+)
 
 export default NavMobile
