@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby'
 import GatsbyImg from 'gatsby-image'
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import AmazonLogo from '../images/amazon.svg'

@@ -1,5 +1,5 @@
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import ButtonTextLink from './btn-text-link'
 import { H2 } from './heading'
