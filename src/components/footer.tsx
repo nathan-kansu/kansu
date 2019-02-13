@@ -6,6 +6,8 @@ import styled from 'styled-components'
 import GithubLogo from '../images/github.svg'
 import InstagramLogo from '../images/instagram.svg'
 
+import { URL_GITHUB, URL_INSTAGRAM } from '../constants'
+
 const StyledFooter = styled(animated.footer)`
   align-content: center;
   display: grid;
@@ -21,10 +23,10 @@ const Footer = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
   return (
     <StyledFooter style={props}>
-      <StyledLink href="https://foo.com">
+      <StyledLink href={URL_GITHUB}>
         <img src={GithubLogo} alt="" />
       </StyledLink>
-      <StyledLink href="https://bar.com">
+      <StyledLink href={URL_INSTAGRAM}>
         <img src={InstagramLogo} alt="" />
       </StyledLink>
     </StyledFooter>
