@@ -1,9 +1,10 @@
 import { Link } from 'gatsby'
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
+import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
-import ButtonBurger from './btn-burger-menu'
 
+import ButtonBurger from './btn-burger-menu'
 import Logo from './logo'
 import NavDesktop from './nav-desktop'
 import NavMobile from './nav-mobile'
@@ -13,7 +14,7 @@ interface HeaderProps {
   isMobileNavActive: boolean
 }
 
-const StyledHeader = styled.header`
+const StyledHeader = styled(animated.header)`
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -29,8 +30,10 @@ const StyledLink = styled(Link)`
 `
 
 const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
+
   return (
-    <StyledHeader>
+    <StyledHeader style={props}>
       <StyledH1>
         <StyledLink to="/">
           <Logo />
