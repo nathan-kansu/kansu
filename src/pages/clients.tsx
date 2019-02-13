@@ -5,7 +5,6 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { H2 } from '../components/heading'
-import Layout from '../components/layout'
 import Section from '../components/section'
 import SEO from '../components/seo'
 
@@ -64,7 +63,7 @@ const ClientsPage = () => (
       }
     `}
     render={data => (
-      <Layout>
+      <>
         <SEO title="About" />
         <Section>
           <H2>Clients</H2>
@@ -101,7 +100,7 @@ const ClientsPage = () => (
             </StyledLi>
           </StyledOl>
         </Section>
-      </Layout>
+      </>
     )}
   />
 )

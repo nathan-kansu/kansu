@@ -1,12 +1,11 @@
 import React from 'react'
 import { H2 } from '../components/heading'
-import Layout from '../components/layout'
 import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
 
 const AboutPage = () => (
-  <Layout>
+  <>
     <SEO title="About" />
     <Section>
       <H2>About</H2>
@@ -17,7 +16,7 @@ const AboutPage = () => (
         Officia, incidunt velit!
       </Text>
     </Section>
-  </Layout>
+  </>
 )
 
 export default AboutPage
