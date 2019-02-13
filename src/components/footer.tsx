@@ -1,11 +1,12 @@
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
+import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
 
 import GithubLogo from '../images/github.svg'
 import InstagramLogo from '../images/instagram.svg'
 
-const StyledFooter = styled.footer`
+const StyledFooter = styled(animated.footer)`
   align-content: center;
   display: grid;
   grid-column-gap: ${rem(24)};
@@ -16,15 +17,18 @@ const StyledFooter = styled.footer`
 
 const StyledLink = styled.a``
 
-const Footer = () => (
-  <StyledFooter>
-    <StyledLink href="https://foo.com">
-      <img src={GithubLogo} alt="" />
-    </StyledLink>
-    <StyledLink href="https://bar.com">
-      <img src={InstagramLogo} alt="" />
-    </StyledLink>
-  </StyledFooter>
-)
+const Footer = () => {
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
+  return (
+    <StyledFooter style={props}>
+      <StyledLink href="https://foo.com">
+        <img src={GithubLogo} alt="" />
+      </StyledLink>
+      <StyledLink href="https://bar.com">
+        <img src={InstagramLogo} alt="" />
+      </StyledLink>
+    </StyledFooter>
+  )
+}
 
 export default Footer
