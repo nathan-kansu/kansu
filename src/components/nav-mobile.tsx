@@ -3,6 +3,10 @@ import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
 
+interface NavMobileProps {
+  handleClick(): void
+}
+
 const StyledNavMobile = styled.nav`
   background: ${props => `${props.theme.colors.black}99`};
   bottom: 0;
@@ -53,26 +57,34 @@ const StyledLink = styled(Link)`
   }
 `
 
-const NavMobile = () => (
+const NavMobile = ({ handleClick }: NavMobileProps) => (
   <StyledNavMobile>
     <StyledUl>
       <StyledLi>
-        <StyledLink to="/" activeClassName="active">
+        <StyledLink to="/" onClick={handleClick} activeClassName="active">
           Home
         </StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="/about" activeClassName="active">
+        <StyledLink to="/about" onClick={handleClick} activeClassName="active">
           About
         </StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="/clients" activeClassName="active">
+        <StyledLink
+          to="/clients"
+          onClick={handleClick}
+          activeClassName="active"
+        >
           Clients
         </StyledLink>
       </StyledLi>
       <StyledLi>
-        <StyledLink to="/contact" activeClassName="active">
+        <StyledLink
+          to="/contact"
+          onClick={handleClick}
+          activeClassName="active"
+        >
           Contact
         </StyledLink>
       </StyledLi>

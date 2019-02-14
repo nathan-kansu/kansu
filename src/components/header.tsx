@@ -43,7 +43,7 @@ const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
         handleClick={handleMobileNavToggle}
         isActive={isMobileNavActive}
       />
-      {isMobileNavActive && <NavMobile />}
+      {isMobileNavActive && <NavMobile handleClick={handleMobileNavToggle} />}
       <NavDesktop />
     </StyledHeader>
   )
