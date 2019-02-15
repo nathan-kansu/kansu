@@ -18,7 +18,7 @@ interface LayoutProps extends RouteComponentProps {
 const StyledLayout = styled.div`
   display: grid;
   height: 100vh;
-  grid-row-gap: ${rem(24)};
+  grid-row-gap: ${rem(48)};
   grid-template-rows: ${rem(72)} 1fr ${rem(72)};
   grid-template-columns: 90%;
   justify-content: center;

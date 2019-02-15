@@ -4,6 +4,7 @@ import { rem } from 'polished'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import Container from '../components/container'
 import { H2 } from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
@@ -67,38 +68,40 @@ const ClientsPage = () => (
         <SEO title="About" />
         <Section>
           <H2>Clients</H2>
-          <StyledOl>
-            <StyledLi>
-              <img src={AmazonLogo} alt="Amazon logo" />
-            </StyledLi>
-            <StyledLi>
-              <img src={ZoneLogo} alt="Zone Digital logo " />
-            </StyledLi>
-            <StyledLi>
-              <img src={MubalooLogo} alt="Mubaloo logo" />
-            </StyledLi>
-            <StyledLi>
-              <GatsbyImg
-                alt="Fresh 8 Gaming"
-                imgStyle={{ objectFit: 'contain' }}
-                sizes={data.fresh8Logo.childImageSharp.fluid}
-              />
-            </StyledLi>
-            <StyledLi>
-              <GatsbyImg
-                alt="Genomics England logos"
-                imgStyle={{ objectFit: 'contain' }}
-                sizes={data.genomicsEnglandLogo.childImageSharp.fluid}
-              />
-            </StyledLi>
-            <StyledLi>
-              <GatsbyImg
-                alt="RHE Global logo"
-                imgStyle={{ objectFit: 'contain' }}
-                sizes={data.rheLogo.childImageSharp.fluid}
-              />
-            </StyledLi>
-          </StyledOl>
+          <Container>
+            <StyledOl>
+              <StyledLi>
+                <img src={AmazonLogo} alt="Amazon logo" />
+              </StyledLi>
+              <StyledLi>
+                <img src={ZoneLogo} alt="Zone Digital logo " />
+              </StyledLi>
+              <StyledLi>
+                <img src={MubalooLogo} alt="Mubaloo logo" />
+              </StyledLi>
+              <StyledLi>
+                <GatsbyImg
+                  alt="Fresh 8 Gaming"
+                  imgStyle={{ objectFit: 'contain' }}
+                  sizes={data.fresh8Logo.childImageSharp.fluid}
+                />
+              </StyledLi>
+              <StyledLi>
+                <GatsbyImg
+                  alt="Genomics England logos"
+                  imgStyle={{ objectFit: 'contain' }}
+                  sizes={data.genomicsEnglandLogo.childImageSharp.fluid}
+                />
+              </StyledLi>
+              <StyledLi>
+                <GatsbyImg
+                  alt="RHE Global logo"
+                  imgStyle={{ objectFit: 'contain' }}
+                  sizes={data.rheLogo.childImageSharp.fluid}
+                />
+              </StyledLi>
+            </StyledOl>
+          </Container>
         </Section>
       </>
     )}
