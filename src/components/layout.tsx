@@ -1,6 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby'
 import { rem } from 'polished'
-import React, { useState } from 'react'
+import { RouteComponentProps } from 'reach__router'
+import React, { useEffect, useState } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Footer from './footer'
@@ -10,7 +11,7 @@ import Main from './main'
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 
-interface LayoutProps {
+interface LayoutProps extends RouteComponentProps {
   children: JSX.Element[]
 }
 
@@ -28,9 +29,15 @@ const StyledLayout = styled.div`
   }
 `
 
-const Layout = (props: LayoutProps) => {
-  const { children } = props
+const Layout = ({ children, location }: LayoutProps) => {
   const [isMobileNavActive, handleMobileNavToggle] = useState(false)
+  const [isHomePage, setIsHomePage] = useState(false)
+
+  useEffect(() => {
+    if (location) {
+      setIsHomePage(location.pathname === '/')
+    }
+  })
 
   return (
     <StaticQuery
@@ -53,7 +60,9 @@ const Layout = (props: LayoutProps) => {
               }
               isMobileNavActive={isMobileNavActive}
             />
-            <Main isMobileNavActive={isMobileNavActive}>{children}</Main>
+            <Main isHomePage={isHomePage} isMobileNavActive={isMobileNavActive}>
+              {children}
+            </Main>
             <Footer />
           </StyledLayout>
         </ThemeProvider>

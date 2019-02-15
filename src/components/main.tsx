@@ -1,18 +1,28 @@
 import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
+import Background from './background'
 
 interface MainProps {
-  children: JSX.Element[]
+  children: any
+  isHomePage: boolean
   isMobileNavActive: boolean
 }
 
 const StyledMain = styled.main`
-  ${props => props.isMobileNavActive && `filter: blur(${rem(4)});`}
+  position: relative;
+  ${(props: MainProps) => props.isMobileNavActive && `filter: blur(${rem(4)});`}
 `
 
-const Main = ({ children, isMobileNavActive }: MainProps) => (
-  <StyledMain isMobileNavActive={isMobileNavActive}>{children}</StyledMain>
-)
+const Main = (props: MainProps) => {
+  const { children, isHomePage } = props
+
+  return (
+    <StyledMain {...props}>
+      <Background isHomePage={isHomePage} />
+      {children}
+    </StyledMain>
+  )
+}
 
 export default Main

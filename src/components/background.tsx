@@ -1,16 +1,29 @@
 import { rem } from 'polished'
 import React, { useEffect, useRef, useState } from 'react'
+import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
 import Animation from './animation'
 
-const StyledWrapper = styled.div`
-  height: ${rem(424)};
+interface BackgroundProps {
+  isHomePage: boolean
+}
+
+const StyledWrapper = styled(animated.div)`
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
 `
 
-const Hero = () => {
+const Background = ({ isHomePage }: BackgroundProps) => {
+  const styleProps = useSpring({
+    filter: isHomePage ? 'blur(0)' : `blur(${rem(6)})`,
+  })
+
   const wrapperRef = useRef<HTMLDivElement>(null)
-  const [heroDimensions, setHeroDimensions] = useState({
+  const [backgroundDimensions, setBackgroundDimensions] = useState({
     height: 0,
     width: 0,
   })
@@ -19,7 +32,7 @@ const Hero = () => {
     if (wrapperRef.current) {
       const { offsetHeight, offsetWidth } = wrapperRef.current
 
-      setHeroDimensions({
+      setBackgroundDimensions({
         height: offsetHeight,
         width: offsetWidth,
       })
@@ -36,10 +49,10 @@ const Hero = () => {
   }, [])
 
   return (
-    <StyledWrapper ref={wrapperRef}>
-      {heroDimensions.width && <Animation {...heroDimensions} />}
+    <StyledWrapper ref={wrapperRef} style={styleProps}>
+      {backgroundDimensions.width && <Animation {...backgroundDimensions} />}
     </StyledWrapper>
   )
 }
 
-export default Hero
+export default Background

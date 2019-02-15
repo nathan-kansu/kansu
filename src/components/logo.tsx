@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import KansuLogo from '../images/kansu-logo.svg'
 
 const Logo = styled.div`
-  /* filter: blur(2px); */
   height: ${rem(54)};
 `
 
