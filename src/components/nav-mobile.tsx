@@ -1,7 +1,9 @@
 import { Link } from 'gatsby'
 import { rem } from 'polished'
 import React from 'react'
+import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
+import { NAV } from '../constants/index'
 
 interface NavMobileProps {
   handleClick(): void
@@ -26,7 +28,7 @@ const StyledUl = styled.ul`
   flex-direction: column;
 `
 
-const StyledLi = styled.li``
+const StyledLi = styled(animated.li)``
 
 const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.white};
@@ -57,39 +59,29 @@ const StyledLink = styled(Link)`
   }
 `
 
-const NavMobile = ({ handleClick }: NavMobileProps) => (
-  <StyledNavMobile>
-    <StyledUl>
-      <StyledLi>
-        <StyledLink to="/" onClick={handleClick} activeClassName="active">
-          Home
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink to="/about" onClick={handleClick} activeClassName="active">
-          About
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink
-          to="/clients"
-          onClick={handleClick}
-          activeClassName="active"
-        >
-          Clients
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink
-          to="/contact"
-          onClick={handleClick}
-          activeClassName="active"
-        >
-          Contact
-        </StyledLink>
-      </StyledLi>
-    </StyledUl>
-  </StyledNavMobile>
-)
+const NavMobile = ({ handleClick }: NavMobileProps) => {
+  const trail = useTrail(NAV.length, {
+    from: { opacity: 0 },
+    opacity: 1,
+  })
+
+  return (
+    <StyledNavMobile>
+      <StyledUl>
+        {trail.map((props, index) => (
+          <StyledLi key={NAV[index].title} style={props}>
+            <StyledLink
+              to={NAV[index].url}
+              onClick={handleClick}
+              activeClassName="active"
+            >
+              {NAV[index].title}
+            </StyledLink>
+          </StyledLi>
+        ))}
+      </StyledUl>
+    </StyledNavMobile>
+  )
+}
 
 export default NavMobile
