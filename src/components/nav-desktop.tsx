@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
+import { NAV } from '../constants'
 
 const StyledNavDesktop = styled.nav`
   display: none;
@@ -50,26 +51,13 @@ const StyledLink = styled(Link)`
 const Nav = () => (
   <StyledNavDesktop>
     <StyledUl>
-      <StyledLi>
-        <StyledLink to="/" activeClassName="active">
-          Home
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink to="/about" activeClassName="active">
-          About
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink to="/clients" activeClassName="active">
-          Clients
-        </StyledLink>
-      </StyledLi>
-      <StyledLi>
-        <StyledLink to="/contact" activeClassName="active">
-          Contact
-        </StyledLink>
-      </StyledLi>
+      {NAV.map(({ title, url }) => (
+        <StyledLi key={title}>
+          <StyledLink to={url} activeClassName="active">
+            {title}
+          </StyledLink>
+        </StyledLi>
+      ))}
     </StyledUl>
   </StyledNavDesktop>
 )
