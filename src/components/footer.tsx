@@ -20,7 +20,8 @@ const StyledFooter = styled(animated.footer)`
 const StyledLink = styled.a``
 
 const Footer = () => {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
+  const props = useSpring({ from: { opacity: 0 }, opacity: 1 })
+
   return (
     <StyledFooter style={props}>
       <StyledLink href={URL_GITHUB}>

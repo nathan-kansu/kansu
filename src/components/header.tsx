@@ -30,7 +30,7 @@ const StyledLink = styled(Link)`
 `
 
 const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } })
+  const props = useSpring({ from: { opacity: 0 }, opacity: 1 })
 
   return (
     <StyledHeader style={props}>
