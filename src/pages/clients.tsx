@@ -8,6 +8,7 @@ import Container from '../components/container'
 import { H2 } from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
+import Text from '../components/text'
 
 import AmazonLogo from '../images/amazon.svg'
 import MubalooLogo from '../images/mubaloo.svg'
@@ -32,6 +33,10 @@ const StyledLi = styled.li`
   flex-direction: column;
   justify-content: center;
   height: 100%;
+`
+
+const StyledText = styled(Text)`
+  margin-bottom: ${rem(24)};
 `
 
 const ClientsPage = () => (
@@ -69,6 +74,12 @@ const ClientsPage = () => (
         <Section>
           <H2>Clients</H2>
           <Container>
+            <StyledText>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident omnis molestiae deserunt? Dolore, eos exercitationem!
+              Vitae doloremque illum aliquam esse laboriosam, nihil nostrum,
+              vero dolores, magnam ipsam maiores quos mollitia!
+            </StyledText>
             <StyledOl>
               <StyledLi>
                 <img src={AmazonLogo} alt="Amazon logo" />
