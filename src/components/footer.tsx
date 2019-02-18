@@ -14,7 +14,8 @@ const StyledFooter = styled(animated.footer)`
   grid-column-gap: ${rem(24)};
   grid-template-columns: repeat(2, ${rem(24)});
   grid-template-rows: ${rem(24)};
-  justify-content: flex-end;
+  justify-content: center;
+  position: relative;
 `
 
 const StyledLink = styled.a``

@@ -10,6 +10,7 @@ interface HeadingProps {
 const BaseHeader = styled.span`
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
+  left: 0;
   letter-spacing: 2.3px;
   line-height: 1;
   margin: 0;

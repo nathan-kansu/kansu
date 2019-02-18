@@ -7,10 +7,10 @@ interface ContainerProps {
 }
 
 const StyledContainer = styled.div`
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-left: ${rem(72)};
+  max-width: ${rem(648)};
+  margin-left: ${rem(36)};
 `
 
 const Container = ({ children }: ContainerProps) => (
