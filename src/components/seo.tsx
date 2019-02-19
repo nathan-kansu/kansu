@@ -47,22 +47,6 @@ function SEO({
                 content: `website`,
                 property: `og:type`,
               },
-              {
-                content: `summary`,
-                name: `twitter:card`,
-              },
-              {
-                content: data.site.siteMetadata.author,
-                name: `twitter:creator`,
-              },
-              {
-                content: title,
-                name: `twitter:title`,
-              },
-              {
-                content: metaDescription,
-                name: `twitter:description`,
-              },
             ]
               .concat(
                 keywords.length > 0
@@ -88,7 +72,6 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
-        author
       }
     }
   }
