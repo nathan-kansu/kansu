@@ -5,6 +5,8 @@ import { H2 } from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
 
+import { META_TITLES } from '../constants'
+
 const StyledSection = styled(Section)`
   padding-bottom: 0;
 `
@@ -16,7 +18,7 @@ const StyledH2 = styled(H2)`
 const IndexPage = (props: any) => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title={META_TITLES.HOME} />
       <StyledSection>
         <StyledH2>Home</StyledH2>
       </StyledSection>

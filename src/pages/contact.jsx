@@ -9,6 +9,8 @@ import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
 
+import { META_TITLES } from '../constants'
+
 const StyledButtonTextLink = styled(ButtonTextLink)`
   align-self: center;
 `
@@ -19,7 +21,7 @@ const StyledText = styled(Text)`
 
 const ContactPage = () => (
   <>
-    <SEO title="Contact" />
+    <SEO title={META_TITLES.CONTACT} />
     <Section>
       <H2>Contact</H2>
       <Container>

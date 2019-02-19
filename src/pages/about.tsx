@@ -5,9 +5,11 @@ import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
 
+import { META_TITLES } from '../constants'
+
 const AboutPage = () => (
   <>
-    <SEO title="About" />
+    <SEO title={META_TITLES.ABOUT} />
     <Section>
       <H2>About</H2>
       <Container>

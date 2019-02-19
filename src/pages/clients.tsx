@@ -1,9 +1,7 @@
-import { graphql, StaticQuery } from 'gatsby'
 import { rem } from 'polished'
 import * as React from 'react'
 import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
-import Client from '../components/client'
 import Container from '../components/container'
 import { H2 } from '../components/heading'
 import Section from '../components/section'
@@ -16,6 +14,8 @@ import GenomicsEnglandLogo from '../images/genomics-england.png'
 import MubalooLogo from '../images/mubaloo.svg'
 import RHELogo from '../images/rhe.png'
 import ZoneLogo from '../images/zone.svg'
+
+import { META_TITLES } from '../constants'
 
 const StyledOl = styled.ol`
   align-items: center;
@@ -63,7 +63,7 @@ const ClientsPage = () => {
 
   return (
     <>
-      <SEO title="About" />
+      <SEO title={META_TITLES.CLIENTS} />
       <Section>
         <H2>Clients</H2>
         <Container>

@@ -8,9 +8,24 @@ export const COLOR_GREY_RGBA = [73, 85, 94, 0]
 export const COLOR_WHITE_RGBA = [255, 255, 255, 0]
 export const URL_GITHUB = 'https://github.com/nath-codes'
 export const URL_INSTAGRAM = 'https://www.instagram.com/nathan.kansu'
+
+export const PAGES = {
+  ABOUT: 'About',
+  CLIENTS: 'Clients',
+  CONTACT: 'Contact',
+  HOME: 'Home',
+}
+
 export const NAV = [
-  { title: 'Home', url: '/' },
-  { title: 'About', url: '/about' },
-  { title: 'Clients', url: '/clients' },
-  { title: 'Contact', url: '/contact' },
+  { title: PAGES.HOME, url: '/' },
+  { title: PAGES.ABOUT, url: '/about' },
+  { title: PAGES.CLIENTS, url: '/clients' },
+  { title: PAGES.CONTACT, url: '/contact' },
 ]
+
+export const META_TITLES = {
+  ABOUT: PAGES.ABOUT,
+  CLIENTS: PAGES.CLIENTS,
+  CONTACT: PAGES.CONTACT,
+  HOME: PAGES.HOME,
+}
