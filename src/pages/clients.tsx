@@ -1,9 +1,9 @@
 import { graphql, StaticQuery } from 'gatsby'
-import GatsbyImg from 'gatsby-image'
 import { rem } from 'polished'
 import * as React from 'react'
+import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
-
+import Client from '../components/client'
 import Container from '../components/container'
 import { H2 } from '../components/heading'
 import Section from '../components/section'
@@ -11,7 +11,10 @@ import SEO from '../components/seo'
 import Text from '../components/text'
 
 import AmazonLogo from '../images/amazon.svg'
+import Fresh8Logo from '../images/fresh-8.png'
+import GenomicsEnglandLogo from '../images/genomics-england.png'
 import MubalooLogo from '../images/mubaloo.svg'
+import RHELogo from '../images/rhe.png'
 import ZoneLogo from '../images/zone.svg'
 
 const StyledOl = styled.ol`
@@ -28,95 +31,59 @@ const StyledOl = styled.ol`
   }
 `
 
-const StyledLi = styled.li`
+const StyledText = styled(Text)`
+  margin-bottom: ${rem(24)};
+`
+
+const StyledLi = styled(animated.li)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 `
 
-const StyledText = styled(Text)`
-  margin-bottom: ${rem(24)};
+const StyledImg = styled.img`
+  object-fit: contain;
 `
 
-const ClientsPage = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        fresh8Logo: file(relativePath: { eq: "fresh-8.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        genomicsEnglandLogo: file(
-          relativePath: { eq: "genomics-england.png" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        rheLogo: file(relativePath: { eq: "rhe.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 240) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <SEO title="About" />
-        <Section>
-          <H2>Clients</H2>
-          <Container>
-            <StyledText>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Provident omnis molestiae deserunt? Dolore, eos exercitationem!
-              Vitae doloremque illum aliquam esse laboriosam, nihil nostrum,
-              vero dolores, magnam ipsam maiores quos mollitia!
-            </StyledText>
-            <StyledOl>
-              <StyledLi>
-                <img src={AmazonLogo} alt="Amazon logo" />
+const clients = [
+  { src: AmazonLogo, alt: 'Amazon logo' },
+  { src: ZoneLogo, alt: 'Zone Digital logo' },
+  { src: MubalooLogo, alt: 'Mubaloo logo' },
+  { src: Fresh8Logo, alt: 'Fresh 8 Logo logo' },
+  { src: GenomicsEnglandLogo, alt: 'Genomics England logo' },
+  { src: RHELogo, alt: 'RHE logo' },
+]
+
+const ClientsPage = () => {
+  const trail = useTrail(6, {
+    from: { opacity: 0 },
+    opacity: 1,
+  })
+
+  return (
+    <>
+      <SEO title="About" />
+      <Section>
+        <H2>Clients</H2>
+        <Container>
+          <StyledText>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+            omnis molestiae deserunt? Dolore, eos exercitationem! Vitae
+            doloremque illum aliquam esse laboriosam, nihil nostrum, vero
+            dolores, magnam ipsam maiores quos mollitia!
+          </StyledText>
+          <StyledOl>
+            {trail.map((styleProps, index) => (
+              <StyledLi key={clients[index].alt} style={styleProps}>
+                <StyledImg {...clients[index]} />
               </StyledLi>
-              <StyledLi>
-                <img src={ZoneLogo} alt="Zone Digital logo " />
-              </StyledLi>
-              <StyledLi>
-                <img src={MubalooLogo} alt="Mubaloo logo" />
-              </StyledLi>
-              <StyledLi>
-                <GatsbyImg
-                  alt="Fresh 8 Gaming"
-                  imgStyle={{ objectFit: 'contain' }}
-                  sizes={data.fresh8Logo.childImageSharp.fluid}
-                />
-              </StyledLi>
-              <StyledLi>
-                <GatsbyImg
-                  alt="Genomics England logos"
-                  imgStyle={{ objectFit: 'contain' }}
-                  sizes={data.genomicsEnglandLogo.childImageSharp.fluid}
-                />
-              </StyledLi>
-              <StyledLi>
-                <GatsbyImg
-                  alt="RHE Global logo"
-                  imgStyle={{ objectFit: 'contain' }}
-                  sizes={data.rheLogo.childImageSharp.fluid}
-                />
-              </StyledLi>
-            </StyledOl>
-          </Container>
-        </Section>
-      </>
-    )}
-  />
-)
+            ))}
+          </StyledOl>
+        </Container>
+      </Section>
+    </>
+  )
+}
 
 export default ClientsPage
