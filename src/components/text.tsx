@@ -1,5 +1,5 @@
 import { rem } from 'polished'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
 
