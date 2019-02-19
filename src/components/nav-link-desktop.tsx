@@ -17,7 +17,7 @@ const StyledNavLinkDesktop = styled(Link)`
   letter-spacing: 2.3px;
   position: relative;
   text-transform: uppercase;
-  transition: color 0.1s;
+  transition: color 0.3s;
 
   &:hover {
     color: ${props => props.theme.colors.white};
