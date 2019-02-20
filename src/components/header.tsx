@@ -30,10 +30,10 @@ const StyledLink = styled(Link)`
 `
 
 const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
-  const props = useSpring({ from: { opacity: 0 }, opacity: 1 })
+  const styleProps = useSpring({ from: { opacity: 0 }, opacity: 1 })
 
   return (
-    <StyledHeader style={props}>
+    <StyledHeader style={styleProps}>
       <StyledH1>
         <StyledLink to="/">
           <Logo />

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
 import Container from '../components/container'
-import { H2 } from '../components/heading'
+import Heading from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
@@ -65,7 +65,7 @@ const ClientsPage = () => {
     <>
       <SEO title={META_TITLES.CLIENTS} />
       <Section>
-        <H2>Clients</H2>
+        <Heading>Clients</Heading>
         <Container>
           <StyledText>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident

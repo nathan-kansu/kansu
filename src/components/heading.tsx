@@ -1,5 +1,6 @@
 import { rem } from 'polished'
 import React, { useLayoutEffect, useRef, useState } from 'react'
+import { animated, useSpring } from 'react-spring'
 import styled from 'styled-components'
 
 interface HeadingProps {
@@ -7,9 +8,10 @@ interface HeadingProps {
   className?: string
 }
 
-const BaseHeader = styled.span`
+const StyledHeading = styled(animated.h2)`
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
+  font-size: ${rem(36)};
   left: 0;
   letter-spacing: 2.3px;
   line-height: 1;
@@ -29,13 +31,22 @@ const BaseHeader = styled.span`
   }
 `
 
-const StyledH2 = styled(BaseHeader)`
-  font-size: ${rem(36)};
-`
-
-export const H2 = ({ className, children }: HeadingProps) => {
+const Heading = ({ className, children }: HeadingProps) => {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const [headingWidth, setHeadingWidth] = useState('0')
+
+  const animationProps = useSpring({
+    from: {
+      marginTop: `-${rem(24)}`,
+      opacity: 0,
+    },
+    to: {
+      marginTop: '0',
+      opacity: 1,
+    },
+  })
+
+  const styleProps = { ...animationProps, top: headingWidth }
 
   useLayoutEffect(() => {
     if (headingRef.current) {
@@ -45,13 +56,10 @@ export const H2 = ({ className, children }: HeadingProps) => {
   }, [])
 
   return (
-    <StyledH2
-      as="h2"
-      className={className}
-      style={{ top: headingWidth }}
-      ref={headingRef}
-    >
+    <StyledHeading className={className} ref={headingRef} style={styleProps}>
       {children}
-    </StyledH2>
+    </StyledHeading>
   )
 }
+
+export default Heading

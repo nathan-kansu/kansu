@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../components/container'
-import { H2 } from '../components/heading'
+import Heading from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
@@ -11,7 +11,7 @@ const AboutPage = () => (
   <>
     <SEO title={META_TITLES.ABOUT} />
     <Section>
-      <H2>About</H2>
+      <Heading>About</Heading>
       <Container>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae

@@ -4,7 +4,7 @@ import { rem } from 'polished'
 
 import ButtonTextLink from '../components/btn-text-link'
 import Container from '../components/container'
-import { H2 } from '../components/heading'
+import Heading from '../components/heading'
 import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
@@ -23,7 +23,7 @@ const ContactPage = () => (
   <>
     <SEO title={META_TITLES.CONTACT} />
     <Section>
-      <H2>Contact</H2>
+      <Heading>Contact</Heading>
       <Container>
         <StyledText>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
