@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ANIMATION_TOTAL_SHAPES } from '../constants'
 import { Shape } from '../interfaces'
 import { generateShapeFactory } from '../utils/shape'
@@ -10,60 +10,26 @@ import {
   ANIMATION_RESIZE_SPEED,
 } from '../constants'
 
-interface AnimationState {
-  shapes: any[]
-}
-
 interface AnimationProps {
   height: number
   width: number
 }
 
-class Animation extends Component<AnimationProps, AnimationState> {
-  private requestAnimationFrame: number = 0
-
-  constructor(props: any) {
-    super(props)
-
-    this.state = {
-      shapes: this.generateShapes(),
-    }
-  }
-
-  public componentDidMount() {
-    this.requestAnimationFrame = requestAnimationFrame(this.animate)
-  }
-
-  public componentWillUnmount() {
-    cancelAnimationFrame(this.requestAnimationFrame)
-  }
-
-  public render = () => {
-    return <Canvas {...this.props} {...this.state} />
-  }
-
-  private animate = () => {
-    this.setState({
-      shapes: this.state.shapes.map(this.updateShape),
-    })
-    this.requestAnimationFrame = requestAnimationFrame(this.animate)
-  }
-
-  private generateShapes = () => {
-    const shapes = []
-    for (let i = 0; i < ANIMATION_TOTAL_SHAPES; i++) {
-      shapes.push(this.generateShape())
-    }
-
-    return shapes
-  }
-
-  private generateShape = () => {
-    const { height, width } = this.props
+const Animation = (props: AnimationProps) => {
+  const generateShape = () => {
+    const { height, width } = props
     return generateShapeFactory(height, width)
   }
 
-  private updateShape = (shape: Shape) => {
+  const generateShapes = () => {
+    const generatedShapes = []
+    for (let i = 0; i < ANIMATION_TOTAL_SHAPES; i++) {
+      generatedShapes.push(generateShape())
+    }
+    return generatedShapes
+  }
+
+  const updateShape = (shape: Shape) => {
     const {
       fill: [red, green, blue, opacity],
       height,
@@ -75,7 +41,7 @@ class Animation extends Component<AnimationProps, AnimationState> {
     const shapeAnimationComplete = height <= 1 || opacity >= 1 || width <= 1
 
     if (shapeAnimationComplete) {
-      return this.generateShape()
+      return generateShape()
     }
 
     return {
@@ -86,6 +52,22 @@ class Animation extends Component<AnimationProps, AnimationState> {
       y: y + ANIMATION_REPOSITION_SPEED,
     }
   }
+
+  const [shapes, setShapes] = useState(() => generateShapes())
+
+  useEffect(() => {
+    let requestId: number = 0
+
+    const animate = () => {
+      setShapes(prevShapes => prevShapes.map(updateShape))
+      requestId = requestAnimationFrame(animate)
+    }
+
+    requestId = requestAnimationFrame(animate)
+    return () => cancelAnimationFrame(requestId)
+  }, [])
+
+  return <Canvas {...props} shapes={shapes} />
 }
 
 export default Animation
