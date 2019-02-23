@@ -9,23 +9,25 @@ export const COLOR_WHITE_RGBA = [255, 255, 255, 0]
 export const URL_GITHUB = 'https://github.com/nath-codes'
 export const URL_INSTAGRAM = 'https://www.instagram.com/nathan.kansu'
 
-export const PAGES = {
+export const PAGE_TITLES = {
   ABOUT: 'About',
   CLIENTS: 'Clients',
   CONTACT: 'Contact',
   HOME: 'Home',
 }
 
+export const PAGE_URLS = ['/', '/about', '/clients', '/contact']
+
 export const NAV = [
-  { title: PAGES.HOME, url: '/' },
-  { title: PAGES.ABOUT, url: '/about' },
-  { title: PAGES.CLIENTS, url: '/clients' },
-  { title: PAGES.CONTACT, url: '/contact' },
+  { title: PAGE_TITLES.HOME, url: PAGE_URLS[0] },
+  { title: PAGE_TITLES.ABOUT, url: PAGE_URLS[1] },
+  { title: PAGE_TITLES.CLIENTS, url: PAGE_URLS[2] },
+  { title: PAGE_TITLES.CONTACT, url: PAGE_URLS[3] },
 ]
 
 export const META_TITLES = {
-  ABOUT: PAGES.ABOUT,
-  CLIENTS: PAGES.CLIENTS,
-  CONTACT: PAGES.CONTACT,
-  HOME: PAGES.HOME,
+  ABOUT: PAGE_TITLES.ABOUT,
+  CLIENTS: PAGE_TITLES.CLIENTS,
+  CONTACT: PAGE_TITLES.CONTACT,
+  HOME: PAGE_TITLES.HOME,
 }

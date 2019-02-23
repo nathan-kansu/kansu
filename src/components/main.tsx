@@ -1,11 +1,14 @@
 import { rem } from 'polished'
-import React from 'react'
+import { RouteComponentProps } from 'reach__router'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { PAGE_URLS } from '../constants'
+import getPageNav from '../utils'
 import Background from './background'
+import NavThumb from './nav-thumb'
 
-interface MainProps {
+interface MainProps extends RouteComponentProps {
   children: any
-  isHomePage: boolean
   isMobileNavActive: boolean
 }
 
@@ -15,12 +18,29 @@ const StyledMain = styled.main`
 `
 
 const Main = (props: MainProps) => {
-  const { children, isHomePage } = props
+  const [isHomePage, setIsHomePage] = useState(false)
+  const { children, location } = props
+  const pageNav = getPageNav(location, PAGE_URLS)
+
+  useEffect(
+    () => {
+      if (location) {
+        setIsHomePage(location.pathname === '/')
+      }
+    },
+    [props.location]
+  )
 
   return (
     <StyledMain {...props}>
       <Background isHomePage={isHomePage} />
       {children}
+
+      <div>
+        {pageNav && (
+          <NavThumb prevPage={pageNav.prevPage} nextPage={pageNav.nextPage} />
+        )}
+      </div>
     </StyledMain>
   )
 }
