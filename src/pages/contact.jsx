@@ -9,7 +9,7 @@ import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
 
-import { META_TITLES } from '../constants'
+import { META_TITLES, URL_GITHUB, URL_INSTAGRAM } from '../constants'
 
 const StyledButtonTextLink = styled(ButtonTextLink)`
   align-self: center;
@@ -26,10 +26,16 @@ const ContactPage = () => (
       <Heading>Contact</Heading>
       <Container>
         <StyledText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          fugiat unde architecto incidunt rerum temporibus magni odio nam, modi
-          harum magnam voluptatum quo! Voluptatibus tenetur soluta numquam.
-          Officia, incidunt velit!
+          <p>
+            I am available for contract work in Bristol, London and the
+            South-West of the UK. If you would like to get in touch to discuss
+            any opportunities, click the button below to drop me an email.
+          </p>
+
+          <p>
+            Alternativly, view my projects on <a href={URL_GITHUB}>Github</a> or
+            follow me on <a href={URL_INSTAGRAM}>Instagram</a>.
+          </p>
         </StyledText>
         <StyledButtonTextLink href="mailto:hello@kansu.co" title="Contact" />
       </Container>

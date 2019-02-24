@@ -14,10 +14,21 @@ const AboutPage = () => (
       <Heading>About</Heading>
       <Container>
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          fugiat unde architecto incidunt rerum temporibus magni odio nam, modi
-          harum magnam voluptatum quo! Voluptatibus tenetur soluta numquam.
-          Officia, incidunt velit!
+          <p>
+            Kansu is myself, Nathan Tredgett. A freelance, full-stack developer
+            from Bristol, England.
+          </p>
+
+          <p>
+            I've been a developer for nearly a decade and have worked on all
+            types of projects: big to small, simple to complex, inspiring to the
+            functional.
+          </p>
+
+          <p>
+            I feel code should be clean, elegant and concise, which can result
+            in projects that are intuitive, fast and beautiful.
+          </p>
         </Text>
       </Container>
     </Section>

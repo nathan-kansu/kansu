@@ -62,10 +62,12 @@ const ClientsPage = () => {
         <Heading>Clients</Heading>
         <Container>
           <StyledText>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            omnis molestiae deserunt? Dolore, eos exercitationem! Vitae
-            doloremque illum aliquam esse laboriosam, nihil nostrum, vero
-            dolores, magnam ipsam maiores quos mollitia!
+            <p>
+              I've worked with many digital agencies and companies, working on
+              everything from voice-controlled, interactive advertising to
+              government applications that provide an actual social benefit.
+            </p>
+            <p>Some of my recent clients are shown below.</p>
           </StyledText>
           <StyledDiv>
             {trail.map((styleProps, index) => (
