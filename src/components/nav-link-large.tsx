@@ -3,12 +3,12 @@ import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
 
-interface NavLinkDesktopProps {
+interface NavLinkLargeProps {
   title: string
   url: string
 }
 
-const StyledNavLinkDesktop = styled(Link)`
+const StyledNavLinkLarge = styled(Link)`
   color: ${props => props.theme.colors.grey};
   display: block;
   font-family: ${props => props.theme.fonts.heading};
@@ -29,20 +29,30 @@ const StyledNavLinkDesktop = styled(Link)`
 
     &:after {
       border-bottom: solid ${rem(6)} ${props => props.theme.colors.white};
-      bottom: -${rem(12)};
+      bottom: -${rem(6)};
       content: '';
       left: 0;
       position: absolute;
       right: 0;
     }
+
+    @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
+      &:after {
+        bottom: -${rem(12)};
+      }
+    }
   }
 `
-const NavLinkdesktop = ({ title, url }: NavLinkDesktopProps) => {
+const NavLinkLarge = ({ title, url }: NavLinkLargeProps) => {
   return (
-    <StyledNavLinkDesktop activeClassName="active" to={url}>
+    <StyledNavLinkLarge
+      activeClassName="active"
+      aria-label={`${title} page`}
+      to={url}
+    >
       {title}
-    </StyledNavLinkDesktop>
+    </StyledNavLinkLarge>
   )
 }
 
-export default NavLinkdesktop
+export default NavLinkLarge

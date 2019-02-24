@@ -8,7 +8,7 @@ const StyledText = styled(animated.div)`
   font-size: ${rem(18)};
   line-height: 1.25;
 
-  @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
+  @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
     line-height: 1.3333333333;
   }
 

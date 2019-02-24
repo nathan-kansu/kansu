@@ -6,8 +6,8 @@ import styled from 'styled-components'
 
 import ButtonBurger from './btn-burger-menu'
 import Logo from './logo'
-import NavDesktop from './nav-desktop'
-import NavMobile from './nav-mobile'
+import NavLarge from './nav-large'
+import NavSmall from './nav-small'
 
 interface HeaderProps {
   handleMobileNavToggle: () => void
@@ -43,8 +43,8 @@ const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
         handleClick={handleMobileNavToggle}
         isActive={isMobileNavActive}
       />
-      {isMobileNavActive && <NavMobile handleClick={handleMobileNavToggle} />}
-      <NavDesktop />
+      {isMobileNavActive && <NavSmall handleClick={handleMobileNavToggle} />}
+      <NavLarge />
     </StyledHeader>
   )
 }

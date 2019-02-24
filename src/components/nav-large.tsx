@@ -2,10 +2,10 @@ import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
 
-import NavLinkDesktop from '../components/nav-link-desktop'
 import { NAV } from '../constants'
+import NavLinkLarge from './nav-link-large'
 
-const StyledNavDesktop = styled.nav`
+const StyledNavLarge = styled.nav`
   display: none;
 
   @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
@@ -26,15 +26,15 @@ const StyledLi = styled.li`
 `
 
 const Nav = () => (
-  <StyledNavDesktop>
+  <StyledNavLarge>
     <StyledUl>
       {NAV.map(({ title, url }) => (
         <StyledLi key={title}>
-          <NavLinkDesktop url={url} title={title} />
+          <NavLinkLarge url={url} title={title} />
         </StyledLi>
       ))}
     </StyledUl>
-  </StyledNavDesktop>
+  </StyledNavLarge>
 )
 
 export default Nav

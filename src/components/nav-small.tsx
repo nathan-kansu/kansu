@@ -5,11 +5,11 @@ import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
 import { NAV } from '../constants/index'
 
-interface NavMobileProps {
+interface NavSmallProps {
   handleClick(): void
 }
 
-const StyledNavMobile = styled.nav`
+const StyledNavSmall = styled.nav`
   background: ${props => `${props.theme.colors.black}99`};
   bottom: 0;
   font-family: ${props => props.theme.fonts.heading};
@@ -50,14 +50,14 @@ const StyledLink = styled(Link)`
   }
 `
 
-const NavMobile = ({ handleClick }: NavMobileProps) => {
+const NavSmall = ({ handleClick }: NavSmallProps) => {
   const trail = useTrail(NAV.length, {
     from: { opacity: 0 },
     opacity: 1,
   })
 
   return (
-    <StyledNavMobile>
+    <StyledNavSmall>
       <StyledUl>
         {trail.map((props, index) => (
           <StyledLi key={NAV[index].title} style={props}>
@@ -71,8 +71,8 @@ const NavMobile = ({ handleClick }: NavMobileProps) => {
           </StyledLi>
         ))}
       </StyledUl>
-    </StyledNavMobile>
+    </StyledNavSmall>
   )
 }
 
-export default NavMobile
+export default NavSmall
