@@ -19,7 +19,7 @@ const StyledWrapper = styled(animated.div)`
 
 const Background = ({ isHomePage }: BackgroundProps) => {
   const styleProps = useSpring({
-    filter: isHomePage ? 'blur(0)' : `blur(${rem(6)})`,
+    filter: isHomePage ? 'blur(0)' : `blur(${rem(12)})`,
   })
 
   const wrapperRef = useRef<HTMLDivElement>(null)
