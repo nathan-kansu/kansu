@@ -6,11 +6,33 @@ import styled from 'styled-components'
 const StyledText = styled(animated.div)`
   align-self: center;
   font-size: ${rem(18)};
-  line-height: ${rem(24)};
+  line-height: 1.25;
+
+  @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
+    line-height: 1.3333333333;
+  }
+
+  a {
+    color: ${props => props.theme.colors.grey};
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+
+  p {
+    margin-bottom: ${rem(24)};
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `
 
 interface TextProps {
-  children: string | JSX.Element
+  children: string | JSX.Element | JSX.Element[]
   className?: string
 }
 

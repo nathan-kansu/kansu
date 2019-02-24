@@ -17,16 +17,17 @@ import ZoneLogo from '../images/zone.svg'
 
 import { META_TITLES } from '../constants'
 
-const StyledOl = styled.ol`
+const StyledDiv = styled.div`
   align-items: center;
   display: grid;
-  grid-column-gap: ${rem(48)};
-  grid-row-gap: ${rem(48)};
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: ${rem(96)};
+  grid-column-gap: ${rem(24)};
+  grid-row-gap: ${rem(24)};
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: ${rem(48)} ${rem(48)};
 
   @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: ${rem(48)};
+    grid-row-gap: ${rem(24)};
     grid-template-rows: ${rem(96)} ${rem(96)};
   }
 `
@@ -35,14 +36,7 @@ const StyledText = styled(Text)`
   margin-bottom: ${rem(24)};
 `
 
-const StyledLi = styled(animated.li)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-`
-
-const StyledImg = styled.img`
+const StyledImg = styled(animated.img)`
   object-fit: contain;
 `
 
@@ -73,13 +67,15 @@ const ClientsPage = () => {
             doloremque illum aliquam esse laboriosam, nihil nostrum, vero
             dolores, magnam ipsam maiores quos mollitia!
           </StyledText>
-          <StyledOl>
+          <StyledDiv>
             {trail.map((styleProps, index) => (
-              <StyledLi key={clients[index].alt} style={styleProps}>
-                <StyledImg {...clients[index]} />
-              </StyledLi>
+              <StyledImg
+                {...clients[index]}
+                key={clients[index].alt}
+                style={styleProps}
+              />
             ))}
-          </StyledOl>
+          </StyledDiv>
         </Container>
       </Section>
     </>

@@ -25,9 +25,16 @@ const StyledHeading = styled(animated.h2)`
   &:after {
     color: ${props => props.theme.colors.white};
     content: '■';
-    bottom: ${rem(1)};
-    font-size: ${rem(24)};
+    bottom: ${rem(4)};
+    font-size: ${rem(12)};
     position: absolute;
+  }
+
+  @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
+    &:after {
+      bottom: 0;
+      font-size: ${rem(24)};
+    }
   }
 `
 
@@ -41,7 +48,7 @@ const Heading = ({ className, children }: HeadingProps) => {
       opacity: 0,
     },
     to: {
-      marginTop: '0',
+      marginTop: rem(3),
       opacity: 1,
     },
   })

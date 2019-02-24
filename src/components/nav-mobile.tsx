@@ -38,16 +38,7 @@ const StyledLink = styled(Link)`
   font-size: ${rem(24)};
   letter-spacing: 2.3px;
   padding: ${rem(18)};
-  position: relative;
   text-transform: uppercase;
-
-  &:after {
-    color: ${props => props.theme.colors.white};
-    content: '■';
-    bottom: ${rem(19)};
-    font-size: 1rem;
-    position: absolute;
-  }
 
   &.active {
     background: ${props => props.theme.colors.white};

@@ -7,7 +7,6 @@ const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-bottom: ${rem(72)};
   position: relative;
 `
 
