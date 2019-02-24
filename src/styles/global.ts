@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { ThemeProps } from './theme'
 
 export default createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:900');
@@ -15,12 +16,12 @@ export default createGlobalStyle`
 
     body {
         background: linear-gradient(
-            ${props => props.theme.colors.darkBlue},
-            ${props => props.theme.colors.black}
+            ${(props: ThemeProps) => props.theme.colors.darkBlue},
+            ${(props: ThemeProps) => props.theme.colors.black}
         );
         background-repeat: no-repeat;
-        color: ${props => props.theme.colors.grey};
-        font-family: ${props => props.theme.fonts.body};
+        color: ${(props: ThemeProps) => props.theme.colors.grey};
+        font-family: ${(props: ThemeProps) => props.theme.fonts.body};
         margin: 0;
     }
 

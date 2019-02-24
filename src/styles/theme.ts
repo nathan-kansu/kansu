@@ -1,3 +1,23 @@
+export interface ThemeProps {
+  theme: {
+    breakpoints: {
+      l: string
+      m: string
+      s: string
+    }
+    colors: {
+      black: string
+      darkBlue: string
+      grey: string
+      white: string
+    }
+    fonts: {
+      body: string
+      heading: string
+    }
+  }
+}
+
 export default {
   breakpoints: {
     l: '980px',
