@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kansu",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Kansu packages",
+  "version": "1.0.0",
+  "author": "Nathan Tredgett <nathan@kansu.co>",
   "dependencies": {
     "@types/reach__router": "^1.2.3",
     "@types/react": "^16.7.22",
