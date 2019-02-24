@@ -9,7 +9,13 @@ import Section from '../components/section'
 import SEO from '../components/seo'
 import Text from '../components/text'
 
-import { META_TITLES, URL_GITHUB, URL_INSTAGRAM } from '../constants'
+import {
+  ARIA_GITHUB,
+  ARIA_INSTAGRAM,
+  META_TITLES,
+  URL_GITHUB,
+  URL_INSTAGRAM,
+} from '../constants'
 
 const StyledText = styled(Text)`
   margin-bottom: ${rem(48)};
@@ -34,11 +40,22 @@ const ContactPage = () => {
             </p>
 
             <p>
-              Alternativly, view my projects on <a href={URL_GITHUB}>Github</a>{' '}
-              or follow me on <a href={URL_INSTAGRAM}>Instagram</a>.
+              Alternativly, view my projects on{' '}
+              <a href={URL_GITHUB} aria-label={ARIA_GITHUB}>
+                Github
+              </a>{' '}
+              or follow me on{' '}
+              <a href={URL_INSTAGRAM} aria-label={ARIA_INSTAGRAM}>
+                Instagram
+              </a>
+              .
             </p>
           </StyledText>
-          <StyledButtonTextLink href="mailto:hello@kansu.co" title="Contact" />
+          <StyledButtonTextLink
+            href="mailto:hello@kansu.co"
+            title="Contact"
+            aria-label="Contact me via email"
+          />
         </Container>
       </Section>
     </>

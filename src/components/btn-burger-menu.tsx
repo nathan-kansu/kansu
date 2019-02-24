@@ -75,7 +75,11 @@ const StyledDiv = styled.div`
 
 const BtnBurgerMenu = ({ handleClick, isActive }: BtnBurgerMenuProps) => {
   return (
-    <StyledButton onClick={handleClick} className={isActive ? 'is-active' : ''}>
+    <StyledButton
+      onClick={handleClick}
+      className={isActive ? 'is-active' : ''}
+      aria-label="Toggle Menu"
+    >
       <StyledDiv />
     </StyledButton>
   )

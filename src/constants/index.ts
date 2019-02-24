@@ -9,6 +9,9 @@ export const COLOR_WHITE_RGBA = [255, 255, 255, 0]
 export const URL_GITHUB = 'https://github.com/nath-codes'
 export const URL_INSTAGRAM = 'https://www.instagram.com/nathan.kansu'
 
+export const ARIA_GITHUB = 'View my projects on Github'
+export const ARIA_INSTAGRAM = 'Follow me on Instagram'
+
 export const PAGE_TITLES = {
   ABOUT: 'About',
   CLIENTS: 'Clients',

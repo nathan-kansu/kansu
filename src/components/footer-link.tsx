@@ -4,13 +4,14 @@ import styled from 'styled-components'
 import theme from '../styles/theme'
 
 interface FooterLinkProps {
+  ariaLabel: string
   children: JSX.Element
   href: string
 }
 
 const StyledLink = styled(animated.a)``
 
-const FooterLink = ({ children, href }: FooterLinkProps) => {
+const FooterLink = ({ ariaLabel, children, href }: FooterLinkProps) => {
   const [isHovered, setHovered] = useState(false)
   const styleProps = useSpring({
     fill: isHovered ? theme.colors.white : theme.colors.grey,
@@ -18,6 +19,7 @@ const FooterLink = ({ children, href }: FooterLinkProps) => {
 
   return (
     <StyledLink
+      aria-label={ariaLabel}
       href={href}
       style={styleProps}
       onMouseEnter={() => setHovered(true)}
