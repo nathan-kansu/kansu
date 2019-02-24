@@ -39,11 +39,19 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-jest": "^24.1.0",
+    "babel-preset-gatsby": "^0.1.8",
     "gatsby-plugin-tslint": "^0.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
     "prettier": "^1.15.2",
+    "react-test-renderer": "^16.8.3",
+    "ts-jest": "^24.0.0",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-loader": "^3.5.4"
