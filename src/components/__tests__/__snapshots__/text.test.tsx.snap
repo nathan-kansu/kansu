@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text renders correctly 1`] = `
+<div
+  className="sc-bdVaJa iGaYgC"
+  style={
+    Object {
+      "opacity": 0,
+      "transform": "translateY(1.5rem)",
+    }
+  }
+>
+  foo
+</div>
+`;
