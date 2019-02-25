@@ -2,14 +2,13 @@ import { graphql, StaticQuery } from 'gatsby'
 import { rem } from 'polished'
 import { RouteComponentProps } from 'reach__router'
 import React, { useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 import Footer from './footer'
 import Header from './header'
 import Main from './main'
 
 import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
 
 interface LayoutProps extends RouteComponentProps {
   children: JSX.Element[]
@@ -49,20 +48,18 @@ const Layout = (props: LayoutProps) => {
         }
       `}
       render={() => (
-        <ThemeProvider theme={theme}>
-          <StyledLayout>
-            <GlobalStyle />
-            <Header
-              handleMobileNavToggle={() =>
-                handleMobileNavToggle(prevState => !prevState)
-              }
-              isMobileNavActive={isMobileNavActive}
-            />
+        <StyledLayout>
+          <GlobalStyle />
+          <Header
+            handleMobileNavToggle={() =>
+              handleMobileNavToggle(prevState => !prevState)
+            }
+            isMobileNavActive={isMobileNavActive}
+          />
 
-            <Main {...props} isMobileNavActive={isMobileNavActive} />
-            <Footer />
-          </StyledLayout>
-        </ThemeProvider>
+          <Main {...props} isMobileNavActive={isMobileNavActive} />
+          <Footer />
+        </StyledLayout>
       )}
     />
   )
