@@ -12,7 +12,7 @@ exports[`Footer renders correctly 1`] = `
   <a
     aria-label="View my projects on Github"
     className="sc-bdVaJa bDWFJH"
-    href="https://github.com/nath-codes"
+    href="https://github.com/nathan-kansu"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     style={
