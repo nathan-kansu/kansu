@@ -7,6 +7,7 @@ interface SeoProps {
   keywords?: string[]
   lang?: string
   meta?: []
+  siteUrl?: string
   title: string
 }
 
@@ -16,6 +17,7 @@ function SEO({
   meta = [],
   keywords = [],
   title,
+  siteUrl,
 }: SeoProps) {
   return (
     <StaticQuery
@@ -47,6 +49,10 @@ function SEO({
                 content: `website`,
                 property: `og:type`,
               },
+              {
+                content: siteUrl,
+                property: `og:url`,
+              },
             ]
               .concat(
                 keywords.length > 0
@@ -72,6 +78,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
+        siteUrl
       }
     }
   }

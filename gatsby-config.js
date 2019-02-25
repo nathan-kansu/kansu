@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kansu`,
     description: `Kansu is Bristol-based freelance developer, Nathan Tredgett.`,
+    siteUrl: 'https://kansu.co',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
