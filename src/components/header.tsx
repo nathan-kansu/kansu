@@ -9,6 +9,8 @@ import Logo from './logo'
 import NavLarge from './nav-large'
 import NavSmall from './nav-small'
 
+import KansuLogo from '../images/kansu-logo.svg'
+
 interface HeaderProps {
   handleMobileNavToggle: () => void
   isMobileNavActive: boolean
@@ -36,7 +38,7 @@ const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
     <StyledHeader style={styleProps}>
       <StyledH1>
         <StyledLink to="/">
-          <Logo />
+          <Logo src={KansuLogo} />
         </StyledLink>
       </StyledH1>
       <ButtonBurger
