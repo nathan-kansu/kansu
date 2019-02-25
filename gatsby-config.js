@@ -3,6 +3,7 @@ module.exports = {
     title: `Kansu`,
     description: `Kansu is Bristol-based freelance developer, Nathan Tredgett.`,
     siteUrl: 'https://kansu.co',
+    ogImgUrl: 'https://cdn.kansu.co/img/og_url.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

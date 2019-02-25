@@ -7,6 +7,7 @@ interface SeoProps {
   keywords?: string[]
   lang?: string
   meta?: []
+  ogImgUrl?: string
   siteUrl?: string
   title: string
 }
@@ -15,6 +16,7 @@ function SEO({
   description,
   lang = 'en',
   meta = [],
+  ogImgUrl,
   keywords = [],
   title,
   siteUrl,
@@ -50,8 +52,12 @@ function SEO({
                 property: `og:type`,
               },
               {
-                content: siteUrl,
+                content: data.site.siteMetadata.siteUrl,
                 property: `og:url`,
+              },
+              {
+                content: data.site.siteMetadata.ogImgUrl,
+                property: `og:image`,
               },
             ]
               .concat(
@@ -78,6 +84,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
+        ogImgUrl,
         siteUrl
       }
     }
