@@ -16,10 +16,8 @@ function SEO({
   description,
   lang = 'en',
   meta = [],
-  ogImgUrl,
   keywords = [],
   title,
-  siteUrl,
 }: SeoProps) {
   return (
     <StaticQuery
