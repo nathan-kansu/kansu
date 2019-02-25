@@ -36,9 +36,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
     "test": "jest"
   },
   "devDependencies": {
