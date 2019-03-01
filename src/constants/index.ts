@@ -11,6 +11,8 @@ export const COLOR_DARK_BLUE_RGBA = [32, 47, 60, 0]
 export const COLOR_GREY_RGBA = [73, 85, 94, 0]
 export const COLOR_WHITE_RGBA = [255, 255, 255, 0]
 
+export const COLORS = [COLOR_DARK_BLUE_RGBA, COLOR_GREY_RGBA, COLOR_WHITE_RGBA]
+
 export const PAGE_TITLES = {
   ABOUT: 'About',
   CLIENTS: 'Clients',

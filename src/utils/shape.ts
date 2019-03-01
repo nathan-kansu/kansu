@@ -1,25 +1,14 @@
-import {
-  ANIMATION_MAX_DIMENSION,
-  COLOR_DARK_BLUE_RGBA,
-  COLOR_GREY_RGBA,
-  COLOR_WHITE_RGBA,
-} from '../constants'
+import { ANIMATION_MAX_DIMENSION, COLORS } from '../constants'
 
-const colors: [number[], number[], number[]] = [
-  COLOR_DARK_BLUE_RGBA,
-  COLOR_GREY_RGBA,
-  COLOR_WHITE_RGBA,
-]
-
-const generateDimension = () =>
+export const generateDimension = () =>
   Math.round(Math.random() * ANIMATION_MAX_DIMENSION)
 
-const generateFill = () => {
-  const fillColorKey = Math.floor(Math.random() * colors.length)
-  return colors[fillColorKey]
+export const generateFill = () => {
+  const fillColorKey = Math.floor(Math.random() * COLORS.length)
+  return COLORS[fillColorKey]
 }
 
-const generatePosition = (limit: number, dimension: number) => {
+export const generatePosition = (limit: number, dimension: number) => {
   const edge = limit - dimension
   return Math.round(Math.random() * edge)
 }
