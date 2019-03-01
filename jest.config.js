@@ -18,4 +18,5 @@ module.exports = {
   setupFiles: ['<rootDir>/loadershim.js'],
   collectCoverage: true,
   coverageReporters: ['lcov', 'text', 'html'],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
 }
