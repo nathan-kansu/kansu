@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders correctly 1`] = `
+.c0 {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(2,1.5rem);
+  grid-template-rows: 1.5rem;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
 <footer
-  className="sc-bwzfXH gmaNXD"
+  className="c0"
   style={
     Object {
       "opacity": 0,
@@ -11,7 +26,7 @@ exports[`Footer renders correctly 1`] = `
 >
   <a
     aria-label="View my projects on Github"
-    className="sc-bdVaJa bDWFJH"
+    className=""
     href="https://github.com/nathan-kansu"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -31,7 +46,7 @@ exports[`Footer renders correctly 1`] = `
   </a>
   <a
     aria-label="Follow me on Instagram"
-    className="sc-bdVaJa bDWFJH"
+    className=""
     href="https://www.instagram.com/nathan.kansu"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}

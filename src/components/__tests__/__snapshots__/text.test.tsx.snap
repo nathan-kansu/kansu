@@ -1,8 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text renders correctly 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+.c0 a {
+  color: #49555e;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c0 a:hover {
+  color: #ffffff;
+}
+
+.c0 p {
+  margin-bottom: 1.5rem;
+}
+
+.c0 p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    line-height: 1.3333333333;
+  }
+}
+
 <div
-  className="sc-bdVaJa iGaYgC"
+  className="c0"
   style={
     Object {
       "opacity": 0,

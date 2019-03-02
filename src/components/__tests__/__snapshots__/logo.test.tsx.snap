@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logo renders correctly 1`] = `
+.c0 {
+  height: 3.375rem;
+}
+
 <div
-  className="sc-bdVaJa hoXywt"
+  className="c0"
 >
   <img
     alt="Kansu logo"
