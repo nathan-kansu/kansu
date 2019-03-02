@@ -49,6 +49,7 @@
     "gh-pages": "^2.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
+    "jest-styled-components": "^6.3.1",
     "prettier": "^1.15.2",
     "react-test-renderer": "^16.8.3",
     "react-testing-library": "^6.0.0",
