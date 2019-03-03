@@ -8,6 +8,7 @@ import Footer from './footer'
 import Header from './header'
 import Main from './main'
 
+import KansuLogo from '../images/kansu-logo.svg'
 import GlobalStyle from '../styles/global'
 
 interface LayoutProps extends RouteComponentProps {
@@ -55,6 +56,7 @@ const Layout = (props: LayoutProps) => {
               handleMobileNavToggle(prevState => !prevState)
             }
             isMobileNavActive={isMobileNavActive}
+            logo={KansuLogo}
           />
 
           <Main {...props} isMobileNavActive={isMobileNavActive} />

@@ -9,11 +9,10 @@ import Logo from './logo'
 import NavLarge from './nav-large'
 import NavSmall from './nav-small'
 
-import KansuLogo from '../images/kansu-logo.svg'
-
 interface HeaderProps {
   handleMobileNavToggle: () => void
   isMobileNavActive: boolean
+  logo: string
 }
 
 const StyledHeader = styled(animated.header)`
@@ -31,14 +30,18 @@ const StyledLink = styled(Link)`
   margin-right: ${rem(24)};
 `
 
-const Header = ({ handleMobileNavToggle, isMobileNavActive }: HeaderProps) => {
+const Header = ({
+  handleMobileNavToggle,
+  isMobileNavActive,
+  logo,
+}: HeaderProps) => {
   const styleProps = useSpring({ from: { opacity: 0 }, opacity: 1 })
 
   return (
     <StyledHeader style={styleProps}>
       <StyledH1>
         <StyledLink to="/">
-          <Logo src={KansuLogo} />
+          <Logo src={logo} />
         </StyledLink>
       </StyledH1>
       <ButtonBurger
