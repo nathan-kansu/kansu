@@ -1,11 +1,11 @@
-import { ANIMATION_MAX_DIMENSION, COLORS } from '../constants'
-import * as shape from './shape'
+import { ANIMATION_MAX_DIMENSION, COLORS } from '../../constants'
+import * as shape from '../shape'
 
 describe('util/shapes', () => {
   test('it should generate a random "dimension" value', () => {
     const dimension = shape.generateDimension()
 
-    expect(dimension).toBeGreaterThan(0)
+    expect(dimension).toBeGreaterThanOrEqual(0)
     expect(dimension).toBeLessThanOrEqual(ANIMATION_MAX_DIMENSION)
     expect(typeof dimension).toBe('number')
   })
@@ -21,7 +21,7 @@ describe('util/shapes', () => {
     const edge = limit - dimension
     const position = shape.generatePosition(limit, dimension)
 
-    expect(position).toBeGreaterThan(0)
+    expect(position).toBeGreaterThanOrEqual(0)
     expect(position).toBeLessThanOrEqual(edge)
     expect(typeof position).toBe('number')
   })
