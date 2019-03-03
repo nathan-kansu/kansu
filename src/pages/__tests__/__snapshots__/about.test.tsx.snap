@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders correctly 1`] = `
+Array [
+  <div>
+    About
+  </div>,
+  .c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.c1 {
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 2.25rem;
+  left: 0;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  line-height: 1;
+  margin: 0;
+  padding-right: 0.75rem;
+  position: absolute;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1:after {
+  color: #ffffff;
+  content: '■';
+  bottom: 0.25rem;
+  font-size: 0.75rem;
+  position: absolute;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+.c3 a {
+  color: #49555e;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c3 a:hover {
+  color: #ffffff;
+}
+
+.c3 p {
+  margin-bottom: 1.5rem;
+}
+
+.c3 p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c2 {
+    max-width: 40.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c1:after {
+    bottom: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    line-height: 1.3333333333;
+  }
+}
+
+<section
+    className="c0"
+  >
+    <h2
+      className="c1"
+      style={
+        Object {
+          "marginTop": "-1.5rem",
+          "opacity": 0,
+          "top": "0",
+        }
+      }
+    >
+      About
+    </h2>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateY(1.5rem)",
+          }
+        }
+      >
+        <p>
+          Kansu is myself, Nathan Tredgett. A freelance, full-stack developer from Bristol, England.
+        </p>
+        <p>
+          I've been a developer for nearly a decade and have worked on all types of projects: big to small, simple to complex, inspiring to the functional.
+        </p>
+        <p>
+          I feel code should be clean, elegant and concise, which can result in projects that are intuitive, fast and beautiful.
+        </p>
+      </div>
+    </div>
+  </section>,
+]
+`;

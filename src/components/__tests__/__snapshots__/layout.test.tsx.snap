@@ -1,0 +1,400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+.c13 {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(2,1.5rem);
+  grid-template-rows: 1.5rem;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.5rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 2.25rem;
+}
+
+.c6 {
+  background-color: #ffffff;
+  height: 0.25rem;
+  position: relative;
+  width: 100%;
+  -webkit-transition-duration: 0.075s;
+  transition-duration: 0.075s;
+  -webkit-transition-timing-function: cubic-bezier(0.55,0.055,0.675,0.19);
+  transition-timing-function: cubic-bezier(0.55,0.055,0.675,0.19);
+}
+
+.is-active .c6 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+  transition-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.c6:before {
+  border-top: solid 0.25rem #ffffff;
+  content: '';
+  height: 0.25rem;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: -0.625rem;
+  -webkit-transition: top 0.075s 0.12s ease,opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease,opacity 0.075s ease;
+}
+
+.is-active .c6:before {
+  opacity: 0;
+  top: 0;
+  -webkit-transition: top 0.075s ease,opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease,opacity 0.075s 0.12s ease;
+}
+
+.c6:after {
+  bottom: -0.625rem;
+  border-bottom: solid 0.25rem #ffffff;
+  content: '';
+  height: 0.25rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55,0.055,0.675,0.19);
+  -webkit-transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55,0.055,0.675,0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55,0.055,0.675,0.19);
+}
+
+.is-active .c6:after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215,0.61,0.355,1);
+  -webkit-transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215,0.61,0.355,1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.c4 {
+  height: 3.375rem;
+}
+
+.c10 {
+  color: #49555e;
+  display: block;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c10:hover {
+  color: #ffffff;
+}
+
+.c10.active {
+  color: #ffffff;
+  position: relative;
+}
+
+.c10.active:after {
+  border-bottom: solid 0.375rem #ffffff;
+  bottom: -0.375rem;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.c7 {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9 {
+  margin-right: 1.5rem;
+}
+
+.c9:last-child {
+  margin-right: 0;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin: 0;
+}
+
+.c3 {
+  display: block;
+  margin-right: 1.5rem;
+}
+
+.c12 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.c11 {
+  position: relative;
+}
+
+.c0 {
+  display: grid;
+  height: 100vh;
+  grid-row-gap: 1.5rem;
+  grid-template-rows: 4.5rem 1fr 4.5rem;
+  grid-template-columns: 90%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+@media only screen and (min-width:768px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c10.active:after {
+    bottom: -0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c7 {
+    display: block;
+    font-family: "Roboto",sans-serif;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    grid-row-gap: 3rem;
+  }
+}
+
+@media only screen and (min-width:1090px) {
+  .c0 {
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 980px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <h1
+      className="c2"
+    >
+      <a
+        className="c3"
+        href="/"
+      >
+        <div
+          className="c4"
+        >
+          <img
+            alt="Kansu logo"
+            src="test-file-stub"
+          />
+        </div>
+      </a>
+    </h1>
+    <button
+      aria-label="Toggle Menu"
+      className="c5"
+      onClick={[Function]}
+    >
+      <div
+        className="c6"
+      />
+    </button>
+    <nav
+      className="c7"
+    >
+      <ul
+        className="c8"
+      >
+        <li
+          className="c9"
+        >
+          <a
+            activeClassName="active"
+            aria-label="Home page"
+            className="c10"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="c9"
+        >
+          <a
+            activeClassName="active"
+            aria-label="About page"
+            className="c10"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="c9"
+        >
+          <a
+            activeClassName="active"
+            aria-label="Clients page"
+            className="c10"
+            href="/clients"
+          >
+            Clients
+          </a>
+        </li>
+        <li
+          className="c9"
+        >
+          <a
+            activeClassName="active"
+            aria-label="Contact page"
+            className="c10"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    className="c11"
+  >
+    <div
+      className="c12"
+      style={
+        Object {
+          "filter": "blur(0.75rem)",
+        }
+      }
+    >
+      0
+    </div>
+    <div>
+      foo
+    </div>
+    <div>
+      bar
+    </div>
+  </main>
+  <footer
+    className="c13"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <a
+      aria-label="View my projects on Github"
+      className=""
+      href="https://github.com/nathan-kansu"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "fill": "rgba(73, 85, 94, 1)",
+        }
+      }
+    >
+      <svg
+        viewBox="0 0 33 33"
+      >
+        <path
+          d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.35 1.112-.783 0-.387-.014-1.41-.022-2.77-4.53.984-5.487-2.184-5.487-2.184-.74-1.882-1.81-2.383-1.81-2.383-1.478-1.01.113-.99.113-.99C7 23.203 7.86 24.767 7.86 24.767c1.454 2.49 3.814 1.77 4.742 1.353.148-1.05.57-1.77 1.034-2.176-3.617-.41-7.42-1.81-7.42-8.05 0-1.78.635-3.234 1.677-4.372-.168-.412-.727-2.07.16-4.31 0 0 1.367-.44 4.48 1.67 1.298-.363 2.692-.543 4.077-.55 1.384.007 2.777.187 4.078.55 3.11-2.11 4.475-1.67 4.475-1.67.89 2.24.33 3.898.163 4.31C26.37 12.66 27 14.115 27 15.892c0 6.26-3.81 7.636-7.437 8.04.584.502 1.105 1.496 1.105 3.015 0 2.178-.02 3.935-.02 4.47 0 .435.294.942 1.12.783 6.468-2.16 11.13-8.26 11.13-15.455 0-8.997-7.293-16.29-16.29-16.29"
+        />
+      </svg>
+    </a>
+    <a
+      aria-label="Follow me on Instagram"
+      className=""
+      href="https://www.instagram.com/nathan.kansu"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "fill": "rgba(73, 85, 94, 1)",
+        }
+      }
+    >
+      <svg
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.77 1.69 4.92 4.92.057 1.264.068 1.644.068 4.848 0 3.207-.012 3.586-.07 4.85-.148 3.226-1.663 4.77-4.918 4.92-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.15-4.77-1.7-4.918-4.92-.058-1.265-.07-1.644-.07-4.85 0-3.203.013-3.582.07-4.85.15-3.225 1.664-4.77 4.92-4.917 1.265-.057 1.644-.07 4.848-.07zM12 0C8.74 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.013 8.332 0 8.742 0 12c0 3.26.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.28.058 1.69.072 4.948.072 3.26 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.058-1.28.072-1.69.072-4.948 0-3.26-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.98-6.98C15.67.013 15.26 0 12 0zm0 5.838c-3.403 0-6.162 2.76-6.162 6.162s2.76 6.163 6.162 6.163 6.162-2.76 6.162-6.163c0-3.403-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.44.645-1.44 1.44s.644 1.44 1.44 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"
+        />
+      </svg>
+    </a>
+  </footer>
+</div>
+`;
