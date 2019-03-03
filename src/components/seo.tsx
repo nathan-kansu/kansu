@@ -2,15 +2,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-interface SeoProps {
-  description?: string
-  keywords?: string[]
-  lang?: string
-  meta?: []
-  ogImgUrl?: string
-  siteUrl?: string
-  title: string
-}
+import { SeoProps } from '../interfaces'
 
 function SEO({
   description,
@@ -82,7 +74,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
-        ogImgUrl,
+        ogImgUrl
         siteUrl
       }
     }
