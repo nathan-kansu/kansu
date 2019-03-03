@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterLink should render correctly 1`] = `
+<a
+  aria-label="label"
+  class="sc-bdVaJa bDWFJH"
+  href="#"
+  style="fill: rgba(73, 85, 94, 1);"
+>
+  <span>
+    bar
+  </span>
+</a>
+`;
+
+exports[`FooterLink should render correctly 2`] = `
+<a
+  aria-label="label"
+  class="sc-bdVaJa bDWFJH"
+  href="#"
+  style="fill: rgba(73, 85, 94, 1);"
+>
+  <span>
+    bar
+  </span>
+</a>
+`;
+
+exports[`FooterLink should render correctly 3`] = `
+<a
+  aria-label="label"
+  class="sc-bdVaJa bDWFJH"
+  href="#"
+  style="fill: rgba(73, 85, 94, 1);"
+>
+  <span>
+    bar
+  </span>
+</a>
+`;

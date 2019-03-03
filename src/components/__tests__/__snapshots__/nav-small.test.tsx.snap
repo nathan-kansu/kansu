@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavSmall renders correctly 1`] = `
+.c0 {
+  background: #00000099;
+  bottom: 0;
+  font-family: "Roboto",sans-serif;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 4.5rem;
+  z-index: 999;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  color: #ffffff;
+  display: block;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  padding: 1.125rem;
+  text-transform: uppercase;
+}
+
+.c2.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+.c2.active:after {
+  color: #000000;
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<nav
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li
+      className=""
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <a
+        activeClassName="active"
+        className="c2"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className=""
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <a
+        activeClassName="active"
+        className="c2"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+    <li
+      className=""
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <a
+        activeClassName="active"
+        className="c2"
+        href="/clients"
+        onClick={[Function]}
+      >
+        Clients
+      </a>
+    </li>
+    <li
+      className=""
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <a
+        activeClassName="active"
+        className="c2"
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
