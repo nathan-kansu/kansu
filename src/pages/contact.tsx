@@ -1,6 +1,6 @@
+import { rem } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
-import { rem } from 'polished'
 
 import ButtonTextLink from '../components/btn-text-link'
 import Container from '../components/container'
