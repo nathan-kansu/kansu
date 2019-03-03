@@ -6,7 +6,7 @@ describe('util/shapes', () => {
     const dimension = shape.generateDimension()
 
     expect(dimension).toBeGreaterThan(0)
-    expect(dimension).toBeLessThan(ANIMATION_MAX_DIMENSION)
+    expect(dimension).toBeLessThanOrEqual(ANIMATION_MAX_DIMENSION)
     expect(typeof dimension).toBe('number')
   })
 
@@ -22,11 +22,11 @@ describe('util/shapes', () => {
     const position = shape.generatePosition(limit, dimension)
 
     expect(position).toBeGreaterThan(0)
-    expect(position).toBeLessThan(edge)
+    expect(position).toBeLessThanOrEqual(edge)
     expect(typeof position).toBe('number')
   })
 
-  test.only('it should generate random shape data', () => {
+  test('it should generate random shape data', () => {
     const canvasHeight = 200
     const canvasWidth = 200
     const generateDimensionMock = jest.spyOn(shape, 'generateDimension')
