@@ -16,7 +16,7 @@ module.exports = {
   },
   testURL: 'http://localhost',
   setupFiles: ['<rootDir>/loadershim.js'],
-  collectCoverage: true,
+  collectCoverage: false,
   coverageReporters: ['lcov', 'text', 'html'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
 }
