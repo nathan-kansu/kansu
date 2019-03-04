@@ -9,10 +9,18 @@ import SEO from '../components/seo'
 import Text from '../components/text'
 
 import AmazonLogo from '../images/amazon.svg'
-import Fresh8Logo from '../images/fresh-8.png'
-import GenomicsEnglandLogo from '../images/genomics-england.png'
+
+import Fresh8LogoL from '../images/fresh-8-l.png'
+import Fresh8LogoM from '../images/fresh-8-m.png'
+import Fresh8LogoS from '../images/fresh-8-s.png'
+import GenomicsEnglandLogoL from '../images/genomics-england-l.png'
+import GenomicsEnglandLogoM from '../images/genomics-england-m.png'
+import GenomicsEnglandLogoS from '../images/genomics-england-s.png'
+
 import MubalooLogo from '../images/mubaloo.svg'
-import RHELogo from '../images/rhe.png'
+import RHELogoL from '../images/rhe-l.png'
+import RHELogoM from '../images/rhe-m.png'
+import RHELogoS from '../images/rhe-s.png'
 import ZoneLogo from '../images/zone.svg'
 
 import { META_TITLES } from '../constants'
@@ -44,9 +52,17 @@ const clients = [
   { src: AmazonLogo, alt: 'Amazon logo' },
   { src: ZoneLogo, alt: 'Zone Digital logo' },
   { src: MubalooLogo, alt: 'Mubaloo logo' },
-  { src: Fresh8Logo, alt: 'Fresh 8 Logo logo' },
-  { src: GenomicsEnglandLogo, alt: 'Genomics England logo' },
-  { src: RHELogo, alt: 'RHE logo' },
+  {
+    alt: 'Fresh 8 Logo logo',
+    images: [Fresh8LogoS, Fresh8LogoM, Fresh8LogoL],
+    src: Fresh8LogoM,
+  },
+  {
+    alt: 'Genomics England logo',
+    images: [GenomicsEnglandLogoS, GenomicsEnglandLogoM, GenomicsEnglandLogoL],
+    src: GenomicsEnglandLogoM,
+  },
+  { src: RHELogoM, images: [RHELogoS, RHELogoM, RHELogoL], alt: 'RHE logo' },
 ]
 
 const ClientsPage = () => {
@@ -70,13 +86,27 @@ const ClientsPage = () => {
             <p>Some of my recent clients are shown below.</p>
           </StyledText>
           <StyledDiv>
-            {trail.map((styleProps, index) => (
-              <StyledImg
-                {...clients[index]}
-                key={clients[index].alt}
-                style={styleProps}
-              />
-            ))}
+            {trail.map((styleProps, index) => {
+              const { alt, src, images } = clients[index]
+
+              const srcSet = images
+                ? `${images[0]} 88w, ${images[1]} 184w, ${images[2]} 2x`
+                : undefined
+              const sizes = images
+                ? '(min-width: 320px) 88px, 184px"'
+                : undefined
+
+              return (
+                <StyledImg
+                  alt={alt}
+                  key={alt}
+                  src={src}
+                  sizes={sizes}
+                  srcSet={srcSet}
+                  style={styleProps}
+                />
+              )
+            })}
           </StyledDiv>
         </Container>
       </Section>
