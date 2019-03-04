@@ -1,5 +1,5 @@
 import { rem } from 'polished'
-import * as React from 'react'
+import React from 'react'
 import { animated, useTrail } from 'react-spring'
 import styled from 'styled-components'
 import Container from '../components/container'
@@ -42,6 +42,10 @@ const StyledDiv = styled.div`
 
 const StyledText = styled(Text)`
   margin-bottom: ${rem(24)};
+
+  @media only screen and (min-width: ${props => props.theme.breakpoints.m}) {
+    margin-bottom: ${rem(48)};
+  }
 `
 
 const StyledImg = styled(animated.img)`

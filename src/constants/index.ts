@@ -4,6 +4,7 @@ export const ANIMATION_REPOSITION_SPEED = 0.3
 export const ANIMATION_RESIZE_SPEED = 0.6
 export const ANIMATION_TOTAL_SHAPES = 100
 
+export const ARIA_EMAIL = 'Drop me an email'
 export const ARIA_GITHUB = 'View my projects on Github'
 export const ARIA_INSTAGRAM = 'Follow me on Instagram'
 
@@ -36,5 +37,6 @@ export const NAV = [
   { title: PAGE_TITLES.CONTACT, url: PAGE_URLS[3] },
 ]
 
+export const URL_EMAIL = 'mailto:hello@kansu.co'
 export const URL_GITHUB = 'https://github.com/nathan-kansu'
 export const URL_INSTAGRAM = 'https://www.instagram.com/nathan.kansu'

@@ -13,7 +13,7 @@ const StyledText = styled(animated.div)`
   }
 
   @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
-    margin-top: ${rem(48)};
+    margin-top: ${rem(24)};
   }
 
   a {
