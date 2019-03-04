@@ -35,7 +35,7 @@ const StyledLayout = styled.div`
 `
 
 const Layout = (props: LayoutProps) => {
-  const [isMobileNavActive, handleMobileNavToggle] = useState(false)
+  const [isMobileNavActive, setMobileNavActive] = useState(false)
 
   return (
     <StaticQuery
@@ -53,7 +53,7 @@ const Layout = (props: LayoutProps) => {
           <GlobalStyle />
           <Header
             handleMobileNavToggle={() =>
-              handleMobileNavToggle(prevState => !prevState)
+              setMobileNavActive(prevState => !prevState)
             }
             isMobileNavActive={isMobileNavActive}
             logo={KansuLogo}

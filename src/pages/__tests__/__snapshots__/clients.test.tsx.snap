@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clients renders correctly 1`] = `
+Array [
+  <div>
+    Clients
+  </div>,
+  .c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.c1 {
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 2.25rem;
+  left: 0;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  line-height: 1;
+  margin: 0;
+  padding-right: 0.75rem;
+  position: absolute;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1:after {
+  color: #ffffff;
+  content: '■';
+  bottom: 0.25rem;
+  font-size: 0.75rem;
+  position: absolute;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+
+.c4 a {
+  color: #49555e;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c4 a:hover {
+  color: #ffffff;
+}
+
+.c4 p {
+  margin-bottom: 1.5rem;
+}
+
+.c4 p:last-child {
+  margin-bottom: 0;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 3rem 3rem;
+}
+
+.c3 {
+  margin-bottom: 1.5rem;
+}
+
+.c6 {
+  object-fit: contain;
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c2 {
+    max-width: 40.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c1:after {
+    bottom: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c4 {
+    line-height: 1.3333333333;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c5 {
+    grid-column-gap: 3rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: 6rem 6rem;
+  }
+}
+
+<section
+    className="c0"
+  >
+    <h2
+      className="c1"
+      style={
+        Object {
+          "marginTop": "-1.5rem",
+          "opacity": 0,
+          "top": "0",
+        }
+      }
+    >
+      Clients
+    </h2>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translateY(1.5rem)",
+          }
+        }
+      >
+        <p>
+          I've worked with many digital agencies and companies, working on everything from voice-controlled, interactive advertising to government applications that provide an actual social benefit.
+        </p>
+        <p>
+          Some of my recent clients are shown below.
+        </p>
+      </div>
+      <div
+        className="c5"
+      >
+        <img
+          alt="Amazon logo"
+          className="c6"
+          src="test-file-stub"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <img
+          alt="Zone Digital logo"
+          className="c6"
+          src="test-file-stub"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <img
+          alt="Mubaloo logo"
+          className="c6"
+          src="test-file-stub"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <img
+          alt="Fresh 8 Logo logo"
+          className="c6"
+          sizes="(min-width: 320px) 88px, 184px\\""
+          src="test-file-stub"
+          srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <img
+          alt="Genomics England logo"
+          className="c6"
+          sizes="(min-width: 320px) 88px, 184px\\""
+          src="test-file-stub"
+          srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+        <img
+          alt="RHE logo"
+          className="c6"
+          sizes="(min-width: 320px) 88px, 184px\\""
+          src="test-file-stub"
+          srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+      </div>
+    </div>
+  </section>,
+]
+`;

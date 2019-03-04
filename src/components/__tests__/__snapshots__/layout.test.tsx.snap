@@ -398,3 +398,145 @@ exports[`Layout renders correctly 1`] = `
   </footer>
 </div>
 `;
+
+exports[`Layout renders really correctly 1`] = `
+<div
+  class="sc-chPdSV fAqayK"
+>
+  <header
+    class="sc-VigVT eayoNU"
+    style="opacity: 0;"
+  >
+    <h1
+      class="sc-jTzLTM iGfVzN"
+    >
+      <a
+        class="sc-fjdhpX cxpcgb"
+        href="/"
+      >
+        <div
+          class="sc-ifAKCX dexVwf"
+        >
+          <img
+            alt="Kansu logo"
+            src="test-file-stub"
+          />
+        </div>
+      </a>
+    </h1>
+    <button
+      aria-label="Toggle Menu"
+      class="sc-htpNat qQyjU"
+    >
+      <div
+        class="sc-bxivhb eRYPJK"
+      />
+    </button>
+    <nav
+      class="sc-bZQynM bRnfPk"
+    >
+      <ul
+        class="sc-gzVnrw tDqEr"
+      >
+        <li
+          class="sc-htoDjs feDtcI"
+        >
+          <a
+            activeclassname="active"
+            aria-label="Home page"
+            class="sc-EHOje gKkmmx"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="sc-htoDjs feDtcI"
+        >
+          <a
+            activeclassname="active"
+            aria-label="About page"
+            class="sc-EHOje gKkmmx"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="sc-htoDjs feDtcI"
+        >
+          <a
+            activeclassname="active"
+            aria-label="Clients page"
+            class="sc-EHOje gKkmmx"
+            href="/clients"
+          >
+            Clients
+          </a>
+        </li>
+        <li
+          class="sc-htoDjs feDtcI"
+        >
+          <a
+            activeclassname="active"
+            aria-label="Contact page"
+            class="sc-EHOje gKkmmx"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="sc-kAzzGY bsTaCW"
+  >
+    <div
+      class="sc-cSHVUG dSYfHz"
+      style="filter: blur(0.75rem);"
+    >
+      0
+    </div>
+    <div>
+      foo
+    </div>
+    <div>
+      bar
+    </div>
+  </main>
+  <footer
+    class="sc-bwzfXH gmaNXD"
+    style="opacity: 0;"
+  >
+    <a
+      aria-label="View my projects on Github"
+      class="sc-bdVaJa bDWFJH"
+      href="https://github.com/nathan-kansu"
+      style="fill: rgba(73, 85, 94, 1);"
+    >
+      <svg
+        viewBox="0 0 33 33"
+      >
+        <path
+          d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.35 1.112-.783 0-.387-.014-1.41-.022-2.77-4.53.984-5.487-2.184-5.487-2.184-.74-1.882-1.81-2.383-1.81-2.383-1.478-1.01.113-.99.113-.99C7 23.203 7.86 24.767 7.86 24.767c1.454 2.49 3.814 1.77 4.742 1.353.148-1.05.57-1.77 1.034-2.176-3.617-.41-7.42-1.81-7.42-8.05 0-1.78.635-3.234 1.677-4.372-.168-.412-.727-2.07.16-4.31 0 0 1.367-.44 4.48 1.67 1.298-.363 2.692-.543 4.077-.55 1.384.007 2.777.187 4.078.55 3.11-2.11 4.475-1.67 4.475-1.67.89 2.24.33 3.898.163 4.31C26.37 12.66 27 14.115 27 15.892c0 6.26-3.81 7.636-7.437 8.04.584.502 1.105 1.496 1.105 3.015 0 2.178-.02 3.935-.02 4.47 0 .435.294.942 1.12.783 6.468-2.16 11.13-8.26 11.13-15.455 0-8.997-7.293-16.29-16.29-16.29"
+        />
+      </svg>
+    </a>
+    <a
+      aria-label="Follow me on Instagram"
+      class="sc-bdVaJa bDWFJH"
+      href="https://www.instagram.com/nathan.kansu"
+      style="fill: rgba(73, 85, 94, 1);"
+    >
+      <svg
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.77 1.69 4.92 4.92.057 1.264.068 1.644.068 4.848 0 3.207-.012 3.586-.07 4.85-.148 3.226-1.663 4.77-4.918 4.92-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.15-4.77-1.7-4.918-4.92-.058-1.265-.07-1.644-.07-4.85 0-3.203.013-3.582.07-4.85.15-3.225 1.664-4.77 4.92-4.917 1.265-.057 1.644-.07 4.848-.07zM12 0C8.74 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.013 8.332 0 8.742 0 12c0 3.26.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.28.058 1.69.072 4.948.072 3.26 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.058-1.28.072-1.69.072-4.948 0-3.26-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.98-6.98C15.67.013 15.26 0 12 0zm0 5.838c-3.403 0-6.162 2.76-6.162 6.162s2.76 6.163 6.162 6.163 6.162-2.76 6.162-6.163c0-3.403-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.44.645-1.44 1.44s.644 1.44 1.44 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"
+        />
+      </svg>
+    </a>
+  </footer>
+</div>
+`;
