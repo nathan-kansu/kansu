@@ -34,6 +34,12 @@ exports[`Text renders correctly 1`] = `
   }
 }
 
+@media only screen and (min-width:980px) {
+  .c0 {
+    margin-top: 3rem;
+  }
+}
+
 <div
   className="c0"
   style={

@@ -12,6 +12,10 @@ const StyledText = styled(animated.div)`
     line-height: 1.3333333333;
   }
 
+  @media only screen and (min-width: ${props => props.theme.breakpoints.l}) {
+    margin-top: ${rem(48)};
+  }
+
   a {
     color: ${props => props.theme.colors.grey};
     position: relative;

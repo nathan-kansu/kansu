@@ -138,6 +138,12 @@ Array [
   }
 }
 
+@media only screen and (min-width:980px) {
+  .c4 {
+    margin-top: 3rem;
+  }
+}
+
 @media only screen and (min-width:768px) {
   .c5 {
     grid-column-gap: 3rem;

@@ -118,6 +118,12 @@ Array [
   }
 }
 
+@media only screen and (min-width:980px) {
+  .c3 {
+    margin-top: 3rem;
+  }
+}
+
 <section
     className="c0"
   >

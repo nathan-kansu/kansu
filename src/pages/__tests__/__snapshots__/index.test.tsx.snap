@@ -125,6 +125,12 @@ Array [
   }
 }
 
+@media only screen and (min-width:980px) {
+  .c5 {
+    margin-top: 3rem;
+  }
+}
+
 <section
     className="c0 c1"
   >
