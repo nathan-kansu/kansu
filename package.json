@@ -36,7 +36,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "git push",
     "develop": "gatsby develop",
     "test": "jest"
   },
@@ -46,7 +46,6 @@
     "babel-jest": "^24.1.0",
     "babel-preset-gatsby": "^0.1.8",
     "gatsby-plugin-tslint": "^0.0.2",
-    "gh-pages": "^2.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
     "jest-styled-components": "^6.3.1",
