@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import Container from '../components/container'
 import Heading from '../components/heading'
@@ -26,8 +27,8 @@ const AboutPage = () => (
           </p>
 
           <p>
-            I feel code should be clean, elegant and concise, which can result
-            in projects that are intuitive, fast and beautiful.
+            I create code that is clean, elegant and concise, I love what I do
+            and I am available to hire for projects across the UK.
           </p>
         </Text>
       </Container>
