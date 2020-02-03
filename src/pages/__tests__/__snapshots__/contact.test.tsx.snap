@@ -75,14 +75,19 @@ Array [
 }
 
 .c4 a {
-  color: #49555e;
+  color: #ffffff;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.c4 a:hover {
-  color: #ffffff;
+.c4 a:hover:after {
+  border-bottom: solid 0.125rem #ffffff;
+  content: '';
+  position: absolute;
+  bottom: -0.125rem;
+  left: 0;
+  right: 0;
 }
 
 .c4 p {
@@ -207,7 +212,7 @@ Array [
           .
         </p>
         <p>
-          Alternativly, view my projects on
+          Alternatively, view my projects on
            
           <a
             aria-label="View my projects on Github"
