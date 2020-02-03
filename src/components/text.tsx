@@ -17,12 +17,19 @@ const StyledText = styled(animated.div)`
   }
 
   a {
-    color: ${props => props.theme.colors.grey};
+    color: ${props => props.theme.colors.white};
     position: relative;
     transition: all 0.3s;
 
     &:hover {
-      color: ${props => props.theme.colors.white};
+      &:after {
+        border-bottom: solid ${rem(2)} ${props => props.theme.colors.white};
+        content: '';
+        position: absolute;
+        bottom: -${rem(2)};
+        left: 0;
+        right: 0;
+      }
     }
   }
 

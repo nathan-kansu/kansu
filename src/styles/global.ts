@@ -20,7 +20,7 @@ export default createGlobalStyle`
             ${(props: ThemeProps) => props.theme.colors.black}
         );
         background-repeat: no-repeat;
-        color: ${(props: ThemeProps) => props.theme.colors.grey};
+        color: ${(props: ThemeProps) => props.theme.colors.white};
         font-family: ${(props: ThemeProps) => props.theme.fonts.body};
         margin: 0;
     }
