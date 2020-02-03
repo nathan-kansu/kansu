@@ -87,7 +87,7 @@ const ContactPage = () => {
             </p>
 
             <p>
-              Alternativly, view my projects on{' '}
+              Alternatively, view my projects on{' '}
               <a href={URL_GITHUB} aria-label={ARIA_GITHUB}>
                 Github
               </a>{' '}
