@@ -183,7 +183,7 @@ exports[`BtnBurgerMenu renders correctly 2`] = `
 
 <button
   aria-label="Toggle Menu"
-  className="is-active c0"
+  className="c0 is-active"
   onClick={[Function]}
 >
   <div

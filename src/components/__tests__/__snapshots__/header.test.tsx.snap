@@ -528,7 +528,7 @@ exports[`Header renders correctly 2`] = `
   </h1>
   <button
     aria-label="Toggle Menu"
-    className="is-active c4"
+    className="c4 is-active"
     onClick={[Function]}
   >
     <div

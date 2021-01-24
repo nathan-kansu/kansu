@@ -66,7 +66,7 @@ Array [
   position: relative;
 }
 
-.c4 {
+.c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -74,14 +74,14 @@ Array [
   line-height: 1.25;
 }
 
-.c4 a {
+.c3 a {
   color: #ffffff;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.c4 a:hover:after {
+.c3 a:hover:after {
   border-bottom: solid 0.125rem #ffffff;
   content: '';
   position: absolute;
@@ -90,11 +90,11 @@ Array [
   right: 0;
 }
 
-.c4 p {
+.c3 p {
   margin-bottom: 1.5rem;
 }
 
-.c4 p:last-child {
+.c3 p:last-child {
   margin-bottom: 0;
 }
 
@@ -110,7 +110,7 @@ Array [
   grid-template-rows: 3rem 3rem;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 1.5rem;
 }
 
@@ -138,13 +138,13 @@ Array [
 }
 
 @media only screen and (min-width:768px) {
-  .c4 {
+  .c3 {
     line-height: 1.3333333333;
   }
 }
 
 @media only screen and (min-width:980px) {
-  .c4 {
+  .c3 {
     margin-top: 1.5rem;
   }
 }
@@ -158,7 +158,7 @@ Array [
 }
 
 @media only screen and (min-width:768px) {
-  .c3 {
+  .c4 {
     margin-bottom: 3rem;
   }
 }
@@ -191,7 +191,7 @@ Array [
         }
       >
         <p>
-          I've worked with many digital agencies and companies, working on everything from voice-controlled, interactive advertising to government applications that provide an actual social benefit.
+          I've worked for many digital agencies and companies, working on everything from voice-controlled, interactive advertising to government applications that provide an actual social benefit.
         </p>
         <p>
           Some of my recent clients are shown below.
