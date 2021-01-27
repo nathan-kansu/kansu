@@ -16,19 +16,14 @@ const AboutPage = () => (
       <Container>
         <Text>
           <p>
-            Kansu is myself, Nathan Tredgett. A freelance, full-stack developer
-            from Bristol, England.
+            Kansu is myself, Nathan Tredgett. A creative coder from Bristol,
+            England.
           </p>
 
           <p>
-            I've been a developer for nearly a decade and have worked on all
+            I've been a professional developer nearly 10 years and worked on all
             types of projects: big to small, simple to complex, inspiring to the
             functional.
-          </p>
-
-          <p>
-            I create code that is clean, elegant and concise, I love what I do
-            and I am available to hire for projects across the UK.
           </p>
         </Text>
       </Container>

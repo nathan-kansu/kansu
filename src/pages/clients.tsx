@@ -83,7 +83,7 @@ const ClientsPage = () => {
         <Container>
           <StyledText>
             <p>
-              I've worked with many digital agencies and companies, working on
+              I've worked for many digital agencies and companies, working on
               everything from voice-controlled, interactive advertising to
               government applications that provide an actual social benefit.
             </p>
