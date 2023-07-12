@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.c0:last-child {
+  margin-bottom: 3.75rem;
+}
+
+.c3 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin: auto;
+}
+
+.c3 a {
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c3 a:after {
+  border-bottom: solid 2px #ffffff;
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+}
+
+.c3 a:hover {
+  border-bottom: solid 2px #49555e;
+  color: #49555e;
+}
+
+.c3 p {
+  margin-bottom: 1.5rem;
+}
+
+.c3 p:last-child {
+  margin-bottom: 0;
+}
+
+.c1 {
+  bottom: 0;
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 1.5rem;
+  left: 0;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0.75rem;
+  position: absolute;
+  writing-mode: sideways-lr;
+}
+
+.c1:after {
+  color: #ffffff;
+  content: "■";
+  right: 0;
+  top: -0.625rem;
+  font-size: 0.75rem;
+  position: absolute;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 3rem;
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    margin-bottom: 4.125rem;
+  }
+
+  .c0:last-child {
+    margin-bottom: 0;
+    padding-bottom: 6.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c3 {
+    max-width: 42rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    line-height: 1.3333333333;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    font-size: 1.875rem;
+    margin-top: 0.625rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c1 {
+    font-size: 2.25rem;
+  }
+
+  .c1:after {
+    font-size: 1.5rem;
+    top: -1rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    margin-left: 0;
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c2 {
+    max-width: 40.5rem;
+  }
+}
+
+<section
+  className="c0"
+>
+  <h2
+    className="c1"
+  >
+    About
+  </h2>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+      style={
+        {
+          "opacity": 0,
+          "transform": " translateY(1.5rem)",
+        }
+      }
+    >
+      <p>
+        Kansu is myself, Nathan Tredgett. A freelance, senior frontend JavaScript developer based in Bristol, England.
+      </p>
+      <p>
+        With 10 years experience in senior roles, I specialise in React and React-based frameworks, although I have commercial experience in most JS frameworks.
+      </p>
+      <p>
+        My knowledge and experience allows me to consistently deliver effective, well-tested code, quickly. I work with teams of any size to create applications that are fast, consistent and accessible across any and all devices.
+      </p>
+    </div>
+  </div>
+</section>
+`;

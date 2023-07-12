@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.c0:last-child {
+  margin-bottom: 3.75rem;
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    margin-bottom: 4.125rem;
+  }
+
+  .c0:last-child {
+    margin-bottom: 0;
+    padding-bottom: 6.75rem;
+  }
+}
+
+<section
+  className="c0"
+>
+  <h1>
+    Heading
+  </h1>
+  <div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta vero amet quae laudantium sapiente illum expedita, culpa, nostrum, esse tenetur dicta ducimus? At suscipit nam amet perspiciatis veritatis repellendus accusantium.
+  </div>
+</section>
+`;

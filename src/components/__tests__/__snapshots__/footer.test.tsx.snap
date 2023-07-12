@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+.c1 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin: auto;
+}
+
+.c1 a {
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c1 a:after {
+  border-bottom: solid 2px #ffffff;
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+}
+
+.c1 a:hover {
+  border-bottom: solid 2px #49555e;
+  color: #49555e;
+}
+
+.c1 p {
+  margin-bottom: 1.5rem;
+}
+
+.c1 p:last-child {
+  margin-bottom: 0;
+}
+
+.c0 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c1 {
+    max-width: 42rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    line-height: 1.3333333333;
+  }
+}
+
+<footer
+  className="c0"
+>
+  <div
+    className="c1"
+    style={
+      {
+        "opacity": 0,
+        "transform": " translateY(1.5rem)",
+      }
+    }
+  >
+    © Kansu Ltd
+  </div>
+</footer>
+`;

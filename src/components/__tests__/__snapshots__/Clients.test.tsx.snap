@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clients renders correctly 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 3rem;
+}
+
+.c1 {
+  bottom: 0;
+  color: #ffffff;
+  font-family: "Roboto",sans-serif;
+  font-size: 1.5rem;
+  left: 0;
+  -webkit-letter-spacing: 2.3px;
+  -moz-letter-spacing: 2.3px;
+  -ms-letter-spacing: 2.3px;
+  letter-spacing: 2.3px;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0.75rem;
+  position: absolute;
+  writing-mode: sideways-lr;
+}
+
+.c1:after {
+  color: #ffffff;
+  content: "■";
+  right: 0;
+  top: -0.625rem;
+  font-size: 0.75rem;
+  position: absolute;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.c0:last-child {
+  margin-bottom: 3.75rem;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 3rem 3rem;
+}
+
+.c4 {
+  height: 3rem;
+  object-fit: contain;
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    margin-left: 0;
+    max-width: 37.5rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c2 {
+    max-width: 40.5rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    font-size: 1.875rem;
+    margin-top: 0.625rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c1 {
+    font-size: 2.25rem;
+  }
+
+  .c1:after {
+    font-size: 1.5rem;
+    top: -1rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c0 {
+    margin-bottom: 4.125rem;
+  }
+
+  .c0:last-child {
+    margin-bottom: 0;
+    padding-bottom: 6.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c3 {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 6rem 6rem;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .c4 {
+    height: 100%;
+  }
+}
+
+<section
+  className="c0"
+>
+  <h2
+    className="c1"
+  >
+    Clients
+  </h2>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <img
+        alt="Amazon logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="Zone Digital logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="Mubaloo logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="Fresh 8 Logo logo"
+        className="c4"
+        sizes="(min-width: 320px) 88px, 184px""
+        src="test-file-stub"
+        srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="Genomics England logo"
+        className="c4"
+        sizes="(min-width: 320px) 88px, 184px""
+        src="test-file-stub"
+        srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="RHE logo"
+        className="c4"
+        sizes="(min-width: 320px) 88px, 184px""
+        src="test-file-stub"
+        srcSet="test-file-stub 88w, test-file-stub 184w, test-file-stub 2x"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;
