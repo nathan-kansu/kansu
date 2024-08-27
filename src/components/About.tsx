@@ -10,19 +10,29 @@ export const About = () => (
     <Container>
       <Text>
         <p>
-          Kansu is myself, Nathan Tredgett. A freelance, senior frontend
-          JavaScript developer based in Bristol, England.
+          I'm Nathan Tredgett. A freelance, senior TypeScript / JavaScript
+          developer based in Bristol, England.
         </p>
         <p>
-          With 10 years experience in senior roles, I specialise in React and
-          React-based frameworks, although I have commercial experience in most
-          JS frameworks.
+          With 14 years professional development experience, I have developed
+          solutions for a wide range of clients, from small startups to
+          household names such as Guinness and Amazon.
+        </p>
+        <p>
+          Specialising in React and TypeScript projects, I'm also highly skilled
+          in industry standard frameworks and technologies across the JavaScript
+          ecosystem, such as Next.js, Node.js, Tailwind and GraphQL.
         </p>
         <p>
           My knowledge and experience allows me to consistently deliver
-          effective, well-tested code, quickly. I work with teams of any size to
-          create applications that are fast, consistent and accessible across
-          any and all devices.
+          effective, well-tested code, quickly, so you can be confident that
+          your project deadlines will be met.
+        </p>
+
+        <p>
+          I love being part of a team delivering fantastic web applications that
+          are fast, highly optimised and fully accessible, which work perfectly
+          across any device.
         </p>
       </Text>
     </Container>

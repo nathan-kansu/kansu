@@ -7,14 +7,15 @@ import { Heading } from './Heading'
 import { Section } from './Section'
 
 import AmazonLogo from '../images/amazon.svg'
-
+import BmiLogo from '../images/bmi-group.svg'
+import DiageoLogo from '../images/diageo.svg'
 import Fresh8LogoL from '../images/fresh-8-l.png'
 import Fresh8LogoM from '../images/fresh-8-m.png'
 import Fresh8LogoS from '../images/fresh-8-s.png'
 import GenomicsEnglandLogoL from '../images/genomics-england-l.png'
 import GenomicsEnglandLogoM from '../images/genomics-england-m.png'
 import GenomicsEnglandLogoS from '../images/genomics-england-s.png'
-
+import GuinnessLogo from '../images/guinness.svg'
 import MubalooLogo from '../images/mubaloo.svg'
 import RHELogoL from '../images/rhe-l.png'
 import RHELogoM from '../images/rhe-m.png'
@@ -22,6 +23,9 @@ import RHELogoS from '../images/rhe-s.png'
 import ZoneLogo from '../images/zone.svg'
 
 const clients = [
+  { src: DiageoLogo, alt: 'Diageo logo' },
+  { src: GuinnessLogo, alt: 'Guinness logo' },
+  { src: BmiLogo, alt: 'BMI Group logo' },
   { src: AmazonLogo, alt: 'Amazon logo' },
   { src: ZoneLogo, alt: 'Zone Digital logo' },
   { src: MubalooLogo, alt: 'Mubaloo logo' },
@@ -39,7 +43,7 @@ const clients = [
 ]
 
 const _Clients = () => {
-  const trail = useTrail(6, {
+  const trail = useTrail(9, {
     from: { opacity: 0 },
     opacity: 1,
   })

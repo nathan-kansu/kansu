@@ -38,7 +38,9 @@ const _Background = () => {
 
   return (
     <StyledWrapper ref={wrapperRef} style={styleProps}>
-      {backgroundDimensions.width && <Animation {...backgroundDimensions} />}
+      {backgroundDimensions.width ? (
+        <Animation {...backgroundDimensions} />
+      ) : null}
     </StyledWrapper>
   )
 }
@@ -46,7 +48,7 @@ const _Background = () => {
 const StyledWrapper = styled(animated.div)`
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;

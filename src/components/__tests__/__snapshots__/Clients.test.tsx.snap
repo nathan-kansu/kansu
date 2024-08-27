@@ -161,6 +161,36 @@ exports[`Clients renders correctly 1`] = `
       className="c3"
     >
       <img
+        alt="Diageo logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="Guinness logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
+        alt="BMI Group logo"
+        className="c4"
+        src="test-file-stub"
+        style={
+          {
+            "opacity": 0,
+          }
+        }
+      />
+      <img
         alt="Amazon logo"
         className="c4"
         src="test-file-stub"
